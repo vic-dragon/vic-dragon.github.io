@@ -108,8 +108,8 @@ analytics:
 # Site Author
 author:
   name             : "Seungyong Hwang"
-  avatar           : "/assets/images/avatar.jpeg"
-  bio              : "Ph.D. Student in Biostatistcs at UC Davis"
+  avatar           : "/assets/images/avatar.jpg"
+  bio              : "Ph.D. Student in Biostatistics at UC Davis"
   location         : "Davis, CA"
   email            :
   links:
