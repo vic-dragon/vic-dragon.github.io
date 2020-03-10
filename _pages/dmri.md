@@ -1,7 +1,12 @@
 ---
 title: "Pipeline of dMRI processing"
-permalink: /categories/dMRI/
-layout: category
+permalink: /dMRI/
+layout: single
 author_profile: true
-taxonomy: dMRI
 ---
+
+## Step 1:
+
+## Step 2:
+
+## Step 3:
