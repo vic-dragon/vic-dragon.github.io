@@ -1,6 +1,5 @@
 ---
 title: "HCP dMRI data download and preprocessing"
-excerpt: "dMRI"
 
 toc: true
 toc_sticky: true
@@ -13,10 +12,10 @@ tags:
   - HCP
 ---
 
-### HCP dMRI data preprocessing
+## HCP dMRI data preprocessing
 This section describes how to download and process diffussion MRI (dMRI) data from the Human Connectome Project (HCP) database using various *neuroconductor* R packages (https://neuroconductor.org/)
 
-### HCP dMRI data download
+## HCP dMRI data download
 
 **Step 1**: Obtain AWS access credential. Your AWS access credential (access key id and secret key) is available on https://db.humanconnectome.org/app/template/Login.vm. You need to log-in your ConnectomeDB account and then click the **Amazon S3 Access Enabled** box. If you do not have an account, you need to first create one. 
 
@@ -71,7 +70,7 @@ is.null(dir_info$parsed_result$Contents$Key[[1]])
 ```
 
 
-### HCP dMRI data preprocessing: brain extraction and registration
+## HCP dMRI data preprocessing: brain extraction and registration
 
 The *fslr* R package from *neuroconductor* (https://neuroconductor.org/package/fslr) is needed here.  Also, you need to install **FSL** on your computer (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation). The *fslr* package is a wrapper of **FSL**.
 
