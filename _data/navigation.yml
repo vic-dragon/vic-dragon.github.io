@@ -4,6 +4,8 @@ main:
     url: https://vic-dragon.github.io
   - title: "About"
     url: /about/
+  - title: "dMRI Processing"
+    url: /categories/dMRI
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
