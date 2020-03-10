@@ -17,7 +17,7 @@ This section describes how to download and process diffussion MRI (dMRI) data fr
 **Step 1**: Obtain AWS access credential. Your AWS access credential (access key id and secret key) is available on https://db.humanconnectome.org/app/template/Login.vm. You need to log-in your ConnectomeDB account and then click the **Amazon S3 Access Enabled** box. If you do not have an account, you need to first create one. 
 
 
-![Wu-Minn HCP Data webpage.](assets/images/dmri/connectome.png)
+![Wu-Minn HCP Data webpage.](/assets/images/dmri/connectome.png)
 
 **Step 2**: You need to install the *neurohcp* R package (https://neuroconductor.org/package/neurohcp) for batch downloading from HCP database.
 
