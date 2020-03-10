@@ -10,6 +10,8 @@ categories:
 tags:
   - dMRI
   - HCP
+  
+last_modified_at: 2020-03-10T10:04:00-03:00
 ---
 ![Estimated FOD via BJS](/assets/images/dmri/tractography.png)
 
