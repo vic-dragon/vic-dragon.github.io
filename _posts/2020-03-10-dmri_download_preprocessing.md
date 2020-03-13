@@ -5,7 +5,7 @@ classes: wide
 
 categories:
   - Neuroimaging
-  
+
 tags:
   - dMRI
   - HCP

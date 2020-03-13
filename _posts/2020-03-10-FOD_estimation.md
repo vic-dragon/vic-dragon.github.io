@@ -1,8 +1,11 @@
 ---
 title: "FOD estimation and Peak Detection"
 
+classes: wide
+
 categories:
   - Neuroimaging
+  
 tags:
   - dMRI
   - HCP

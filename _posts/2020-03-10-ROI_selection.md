@@ -1,8 +1,11 @@
 ---
 title: "ROI Selection"
 
+classes: wide
+
 categories:
   - Neuroimaging
+  
 tags:
   - dMRI
   - HCP

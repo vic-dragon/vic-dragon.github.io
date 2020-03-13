@@ -1,8 +1,9 @@
 ---
 title: "Pipeline of dMRI processing"
+
+classes: wide
+
 permalink: /dMRI/
-layout: single
-author_profile: true
 ---
 
 <img src= "/assets/images/dmri/pipeline.png" usemap="#dMRIPipeline">

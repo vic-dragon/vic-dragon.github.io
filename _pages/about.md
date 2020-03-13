@@ -1,7 +1,8 @@
 ---
 title: "Webpage Instruction"
+
 permalink: /about/
-layout: single
+
 ---
 
 ## vic-dragon.github.io webpage

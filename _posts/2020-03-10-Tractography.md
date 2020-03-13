@@ -1,8 +1,11 @@
 ---
 title: "Tractography and Feature extraction"
 
+classes: wide
+
 categories:
   - Neuroimaging
+
 tags:
   - dMRI
   - HCP
