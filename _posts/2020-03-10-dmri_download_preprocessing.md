@@ -1,9 +1,11 @@
 ---
 title: "HCP dMRI data download and preprocessing"
 
+classes: wide
 
 categories:
   - Neuroimaging
+  
 tags:
   - dMRI
   - HCP
