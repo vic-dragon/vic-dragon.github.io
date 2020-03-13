@@ -1,10 +1,6 @@
 ---
 title: "FOD estimation and Peak Detection"
 
-toc: true
-toc_sticky: true
-toc_label: "Contents"
-
 categories:
   - Neuroimaging
 tags:

@@ -1,10 +1,6 @@
 ---
 title: "Tractography and Feature extraction"
 
-toc: true
-toc_sticky: true
-toc_label: "Contents"
-
 categories:
   - Neuroimaging
 tags:

@@ -1,10 +1,6 @@
 ---
 title: "ROI Selection"
 
-toc: true
-toc_sticky: true
-toc_label: "Contents"
-
 categories:
   - Neuroimaging
 tags:
