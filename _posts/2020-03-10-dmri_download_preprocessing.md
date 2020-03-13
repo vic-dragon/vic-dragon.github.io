@@ -4,12 +4,6 @@ title: "HCP dMRI data download and preprocessing"
 author_profile: false
 classes: wide
 
-<!--
-toc: true
-toc_sticky: true
-toc_label: "Contents"
--->
-
 categories:
   - Neuroimaging
 tags:
