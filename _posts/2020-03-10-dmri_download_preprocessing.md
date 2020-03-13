@@ -1,8 +1,6 @@
 ---
 title: "HCP dMRI data download and preprocessing"
 
-author_profile: false
-classes: wide
 
 categories:
   - Neuroimaging
