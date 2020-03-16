@@ -8,22 +8,11 @@ permalink: /dMRI/
 sidebar:
   nav: "dmri"
 ---
-<a href="/dMRI/download_preprocessing/">
-	<img src= "/assets/images/dmri/p1.png">
-<a>
 
-<div>
-	<a href="/dMRI/roi_selection/">
-		<img src= "/assets/images/dmri/p2.png">
-	<a>
-	<a href="/dMRI/fod_estimation/">
-		<img src= "/assets/images/dmri/p3.png">
-	<a>
-	<a href="/dMRI/tractography/">
-		<img src= "/assets/images/dmri/p4.png">
-	<a>
-	<img src= "/assets/images/dmri/p2.png">
-</div>
+[![](/assets/images/dmri/p1.png)](dMRI/download_preprocessing/)
+
+[![](/assets/images/dmri/p2.png)](dMRI/roi_selection/) [![](/assets/images/dmri/p3.png)](dMRI/fod_estimation/) [![](/assets/images/dmri/p4.png)](dMRI/tractography/) [![](/assets/images/dmri/p5.png)]
+
 
 <!--
 <img src= "/assets/images/dmri/pipeline.png" usemap="#dMRIPipeline">
