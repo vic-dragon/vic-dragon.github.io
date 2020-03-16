@@ -9,28 +9,31 @@ sidebar:
   nav: "dmri"
 ---
 <a href="/dMRI/download_preprocessing/">
-	<img src= "/assets/images/dmri/p1.png" style="width:100%">
+	<img src= "/assets/images/dmri/p1.png">
 <a>
 
-<div class="row">
-  <div class="column">
+<div style="float:left">
 	<a href="/dMRI/roi_selection/">
-		<img src= "/assets/images/dmri/p2.png" style="width:100%">
+		<img src= "/assets/images/dmri/p2.png">
 	<a>
-  </div>
-  <div class="column">
-    <a href="/dMRI/fod_estimation/">
-		<img src= "/assets/images/dmri/p3.png" style="width:100%">
+<div>
+
+<div style="float:left">
+	<a href="/dMRI/fod_estimation/">
+		<img src= "/assets/images/dmri/p3.png">
 	<a>
-  </div>
-  <div class="column">
-    <a href="/dMRI/tractography/">
-		<img src= "/assets/images/dmri/p4.png" style="width:100%">
+<div>
+
+<div style="float:left">
+	<a href="/dMRI/tractography/">
+		<img src= "/assets/images/dmri/p4.png">
 	<a>
-  </div>
-  <div class="column">
-	<img src= "/assets/images/dmri/p5.png" style="width:100%">
-  </div>
+<div>
+
+<div style="float:left">
+	<img src= "/assets/images/dmri/p2.png">
+<div>
+
 <!--
 <img src= "/assets/images/dmri/pipeline.png" usemap="#dMRIPipeline">
 
