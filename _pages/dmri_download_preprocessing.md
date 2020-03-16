@@ -3,6 +3,8 @@ title: "HCP dMRI data download and preprocessing"
 
 classes: wide
 
+permalink: /dMRI/download_preprocessing
+
 categories:
   - Neuroimaging
 
@@ -10,11 +12,13 @@ tags:
   - dMRI
   - HCP
 
-last_modified_at: 2020-03-13T10:01:00-00:00
+sidebar:
+  nav: "dmri"
+
+last_modified_at: 2020-03-13T10:01:00-04:00
 ---
 
-## HCP dMRI data preprocessing
-This section describes how to download and process diffussion MRI (dMRI) data from the Human Connectome Project (HCP) database using various *neuroconductor* R packages (https://neuroconductor.org/)
+This page describes how to download and process diffussion MRI (dMRI) data from the Human Connectome Project (HCP) database using various *neuroconductor* R packages (https://neuroconductor.org/)
 
 ## HCP dMRI data download
 
@@ -25,37 +29,39 @@ This section describes how to download and process diffussion MRI (dMRI) data fr
 
 **Step 2**: You need to install the *neurohcp* R package (https://neuroconductor.org/package/neurohcp) for batch downloading from HCP database.
 
-**Step 3**: You can find ID of available subjects through the **hcp_1200_scanning_info** function in the *neurohcp* package. Two functions are usually used to download data from  ConnectomeDB: 
+**Step 3**: You can find ID of available subjects through the **hcp_1200_scanning_info** function in the *neurohcp* package. Two functions are usually used to download data from ConnectomeDB: 
 
  - **download_hcp_dir**: To download all files in a certain directory. 
  
  - **download_hcp_file**: To download a certain file
  
-```R
+```r
 library(neurohcp)
 set_aws_api_key(access_key = "your_access_key", secret_key = "your_secret_key")
 hcp_info=hcp_1200_scanning_info # Information of the database
 hcp_id=hcp_info$id #ID of available subjects
+```
 
-## Download the dMRI directory of a subject: five files (1.3GB) 
-# including
-# 1) dMRI data (data.nii.gz), 
-# 2) gradient directions (bvecs), 
-# 3) b-values (bvals),
-# 4) brain mask (nodif_brain_mask.nii.gz),
-# 5) effects of gradient nonlinearities on the bvals and bvecs for each voxel (grad_dev.nii.gz)
+For each subject's dMRI directory, we can download five files (approximately, 1.3GB) as follows:
 
-# "100307" is the subject ID; an output directory should also be specified: default: tempfile()
+* data.nii.gz: dMRI data 
+* bvecs: gradient directions
+* bvals: b-values 
+* nodif_brain_mask.nii.gz: a mask for the brain.
+* grad_dev.nii.gz: effects of gradient nonlinearities on the bvals and bvecs for each voxel 
+
+```r
+# "100307" is the subject ID; 
+# An output directory should also be specified (default -- tempfile())
 download_hcp_dir("HCP/100307/T1w/Diffusion",verbose=FALSE, outdir="user_path")  
 
 # Downlaod the T1w image of a subject: 
 #  - structural volume sampled at the same resolution as the diffusion data
 # "100307" is the subject ID; 
-#  - an output file path/name should also be specified: default: NULL
+# An output file path/name should also be specified (default -- NULL)
 download_hcp_file("HCP/100307/T1w/T1w_acpc_dc_restore_1.25.nii.gz", verbose = FALSE,
                   destfile="user_path/out_file_name") 
 ```
-
 
 **Notes**: Sometimes, the corresponding files of an ID found through **hcp_1200_scanning_info** could not be downloaded through either **download_hcp_dir** or **download_hcp_file**. This problem can occur due to two reasons.
 
@@ -64,24 +70,24 @@ download_hcp_file("HCP/100307/T1w/T1w_acpc_dc_restore_1.25.nii.gz", verbose = FA
 
 You can check whether the dMRI data is available on AWS by using the **hcp_list_dirs** function:  If the result from **hcp_list_dirs** does not have any value in *parsed_result$Contents$Key[[1]]*, it means you need to check the availability of file, manually.
 
-```R
+```r
 dir_info=hcp_list_dirs(paste0("HCP/100307/T1w/Diffusion")) 
-#Check whether dMRI can be downloaded thorugh the "download_hcp_dir" function.
-is.null(dir_info$parsed_result$Contents$Key[[1]]) 
-```
 
+#Check whether dMRI can be downloaded thorugh the "download_hcp_dir" function.
+is.null(dir_info$parsed_result$ListBucketResult$Contents$Key[[1]]) 
+```
 
 ## HCP dMRI data preprocessing: brain extraction and registration
 
 The *fslr* R package from *neuroconductor* (https://neuroconductor.org/package/fslr) is needed here.  Also, you need to install **FSL** on your computer (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation). The *fslr* package is a wrapper of **FSL**.
 
-```R
+```r
 library(fslr)
 ```
 
 
 **Step 1 -- BET extraction** (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/BET): This tool deletes non-brain tissue from an image of the whole head. The resulting image is  used as input for registration (Step 2). 
-```R
+```r
 ##BET step
 # input: data.nii.gz -- the original dMRI data (from "download" step)
 # output: data_brain.nii.gz -- extracted brain dMRI
@@ -97,11 +103,12 @@ fsl_bet(infile="/user_path/T1w_acpc_dc_restore_1.25.nii.gz",
 **Step 2 -- FLIRT registration** (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FLIRT): This is a fully automated tool for linear (affine) intra- and inter-modal brain image registration. The brain image is registered to a template image.
 Both linearly and non-linearly generated MNI152 template images (whole head, extracted brain, brain mask and skull) are included in the folder /usr/local/fsl/data/standard/, courtesy of the MNI.
 
-```R
-## Registration step
-# (a) obtain transformation matrix based on T1 image registration
+```r
+## FLIRT Registration step
+# (a) obtain transformation matrix based on T1 weighted image registration
 # input:  T1w_brain.nii.gz -- extracted T1 image (from "BET" step), 
 #         MNI152_T1_2mm_brain.nii.gz -- template image (from FSL)
+
 # output: T1w_brain_flirt.nii.gz -- registered T1 image, 
 #         flirt.mat -- transformation matrix 
 # parameter: dof=12 means affine transformation

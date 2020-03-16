@@ -4,6 +4,9 @@ title: "Pipeline of dMRI processing"
 classes: wide
 
 permalink: /dMRI/
+
+sidebar:
+  nav: "dmri"
 ---
 
 <img src= "/assets/images/dmri/pipeline.png" usemap="#dMRIPipeline">

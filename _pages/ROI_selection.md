@@ -3,14 +3,19 @@ title: "ROI Selection"
 
 classes: wide
 
+permalink: /dMRI/roi_selection
+
 categories:
   - Neuroimaging
-  
+
 tags:
   - dMRI
   - HCP
-  
-last_modified_at: 2020-03-10T10:02:00-01:00
+
+sidebar:
+  nav: "dmri"
+
+last_modified_at: 2020-03-13T10:01:00-04:00
 ---
 
 ## ROI Selection 

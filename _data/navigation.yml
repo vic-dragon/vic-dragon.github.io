@@ -6,9 +6,17 @@ main:
     url: /dMRI/
   - title: "About"
     url: /about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+
+# documentation links
+dmri:
+  - title: dMRI Processing
+    children:
+      - title: "Download and preprocessing"
+        url: /dMRI/download_preprocessing/
+      - title: "ROI Selection"
+        url: /dMRI/roi_selection/
+      - title: "FOD Estimation and Peak Detection"
+        url: /dMRI/fod_estimation/
+      - title: "Tractography and Feature Extraction"
+        url: /dMRI/tractography/
