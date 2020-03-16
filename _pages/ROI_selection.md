@@ -3,7 +3,7 @@ title: "ROI Selection"
 
 classes: wide
 
-permalink: /dMRI/roi_selection
+permalink: /dMRI/roi_selection/
 
 categories:
   - Neuroimaging

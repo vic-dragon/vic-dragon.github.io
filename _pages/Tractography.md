@@ -3,7 +3,7 @@ title: "Tractography and Feature extraction"
 
 classes: wide
 
-permalink: /dMRI/tractography
+permalink: /dMRI/tractography/
 
 categories:
   - Neuroimaging

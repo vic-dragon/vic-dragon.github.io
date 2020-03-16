@@ -3,7 +3,7 @@ title: "FOD estimation and Peak Detection"
 
 classes: wide
 
-permalink: /dMRI/fod_estimation
+permalink: /dMRI/fod_estimation/
 
 categories:
   - Neuroimaging

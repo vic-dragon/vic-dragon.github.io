@@ -3,7 +3,7 @@ title: "HCP dMRI data download and preprocessing"
 
 classes: wide
 
-permalink: /dMRI/download_preprocessing
+permalink: /dMRI/download_preprocessing/
 
 categories:
   - Neuroimaging
