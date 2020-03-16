@@ -14,8 +14,6 @@ tags:
 
 sidebar:
   nav: "dmri"
-
-last_modified_at: 2020-03-13T10:01:00-04:00
 ---
 
 ## ROI Selection 

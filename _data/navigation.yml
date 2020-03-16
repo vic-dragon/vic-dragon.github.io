@@ -12,7 +12,7 @@ main:
 dmri:
   - title: dMRI Processing
     children:
-      - title: "Download and preprocessing"
+      - title: "Download and Preprocessing"
         url: /dMRI/download_preprocessing/
       - title: "ROI Selection"
         url: /dMRI/roi_selection/

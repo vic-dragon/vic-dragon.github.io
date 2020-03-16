@@ -14,8 +14,6 @@ tags:
 
 sidebar:
   nav: "dmri"
-
-last_modified_at: 2020-03-13T10:01:00-04:00
 ---
 
 This page describes how to download and process diffussion MRI (dMRI) data from the Human Connectome Project (HCP) database using various *neuroconductor* R packages (https://neuroconductor.org/)

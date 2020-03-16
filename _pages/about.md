@@ -2,7 +2,6 @@
 title: "Webpage Instruction"
 
 permalink: /about/
-
 ---
 
 ## vic-dragon.github.io webpage
