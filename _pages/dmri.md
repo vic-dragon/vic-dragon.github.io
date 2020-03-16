@@ -12,27 +12,18 @@ sidebar:
 	<img src= "/assets/images/dmri/p1.png">
 <a>
 
-<div style="float:left">
+<div>
 	<a href="/dMRI/roi_selection/">
 		<img src= "/assets/images/dmri/p2.png">
 	<a>
-<div>
-
-<div style="float:left">
 	<a href="/dMRI/fod_estimation/">
 		<img src= "/assets/images/dmri/p3.png">
 	<a>
-<div>
-
-<div style="float:left">
 	<a href="/dMRI/tractography/">
 		<img src= "/assets/images/dmri/p4.png">
 	<a>
-<div>
-
-<div style="float:left">
 	<img src= "/assets/images/dmri/p2.png">
-<div>
+</div>
 
 <!--
 <img src= "/assets/images/dmri/pipeline.png" usemap="#dMRIPipeline">
