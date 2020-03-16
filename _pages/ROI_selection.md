@@ -16,8 +16,7 @@ sidebar:
   nav: "dmri"
 ---
 
-## ROI Selection 
-This section describes how to select a region of interest on the template brain in **fsleyes**.
+This page describes how to select a region of interest on the template brain in **fsleyes**.
 
 ### Step 1
 
