@@ -29,7 +29,8 @@ This part is done in *R*.
 **Example script**: in */example_scripts* folder: 
 
 - example_HCP_tractography.R: this is the script to run the tracking algorithm on the HCP application 
-
+  - Input: HCP_peaks.mat
+  
 **R package**: in */dmri.tracking-r*
 
 - dmri.tracking_0.1.0.tar.gz: R package for tracking algorithm and tractography.

@@ -37,7 +37,10 @@ This part is done in *python* and *matlab*.
 - example_simulation_fib2.py: simulation example where the true FOD has two peaks
 - example_simulation_fib3.py: simulation example where the true FOD has three peaks
 - example_HCP_analysis.py: script to run HCP data application
+  - Input: bvals, bvecs, Caudate(R).nii.gz, Caudate(R)_noise.nii.gz
+  - Output: HCP_peaks.mat
 - example_plot_fod.m: script to plot the estimated FOD in matlab
+  - Input: est_result.mat
 
 **Python codes**: in */python* folder: 
 
