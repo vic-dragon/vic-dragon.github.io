@@ -12,11 +12,11 @@ main:
 dmri:
   - title: dMRI Processing
     children:
-      - title: "Download and Preprocessing"
-        url: /dMRI/download_preprocessing/
+      - title: "Download"
+        url: /dMRI/download/
+      - title: "Preprocessing"
+        url: /dMRI/preprocessing/
       - title: "ROI Selection"
         url: /dMRI/roi_selection/
-      - title: "FOD Estimation and Peak Detection"
-        url: /dMRI/fod_estimation/
-      - title: "Tractography and Feature Extraction"
-        url: /dMRI/tractography/
+      - title: "D-MRI processing methods"
+        url: /dMRI/method/
