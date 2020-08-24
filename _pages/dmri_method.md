@@ -70,6 +70,7 @@ After tractography and streamline selection, various brain *structural connectiv
 
  
 For each subject, we calculate a *lateralization score (LS)* based on the relative difference between the numbers of selected streamlines from the left- and right- hemisphere *SLF*, respectively: 
+
 $$LS=\frac{\mbox{Streamlines in Left SLF} - \mbox{Streamlines in Right SLF}}{(\mbox{Streamlines in Left SLF} + \mbox{Streamlines in Right SLF})/2}$$
 
 Here, the denominator serves the purpose of normalization so that the *LS* from subjects with different brain sizes are comparable.  As can be seen from the plot in Section 5.2, the *LS* is uncorrelated with the (relative) difference between the numbers of voxels in the left- and right- hemisphere *SLF* masks.  A similar score was used by
