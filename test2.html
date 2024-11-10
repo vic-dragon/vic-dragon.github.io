@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>샘플페이지</title>
+    <style>
+        /* 기본 페이지 레이아웃 */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* 탭 버튼 스타일 */
+        .tabs {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            justify-content: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .tab-button {
+            padding: 15px 30px;
+            cursor: pointer;
+            background-color: lightgray;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            flex: 1;
+            text-align: center;
+            max-width: 200px;
+        }
+        .tab-button.active {
+            background-color: blue;
+            color: white;
+        }
+
+        /* 탭 콘텐츠 스타일 */
+        .tab-content {
+            display: none;
+            margin-top: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+        .tab-content.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 그리드 레이아웃 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 50px;
+            width: 100%;
+            aspect-ratio: 1; /* 정사각형 형태 유지 */
+            max-width: 600px;
+            max-height: 600px;
+        }
+        .grid svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* 커서 이미지 */
+        .cursor {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <!-- SVG Sprite Definitions -->
+    <svg style="display: none;">
+        <symbol id="icon-all-set" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="16" fill="black"/>
+        </symbol>
+        <symbol id="icon-opacity-off" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="16" fill="#D3D3D3"/>
+        </symbol>
+        <symbol id="icon-scale-off" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="16" fill="black"/>
+        </symbol>
+        <symbol id="icon-color-off" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="16" fill="black"/>
+        </symbol>
+        <symbol id="icon-color-on" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="16" fill="red"/>
+        </symbol>
+        <symbol id="icon-cursor" viewBox="0 0 24 24">
+            <polygon points="12,22 22,2 2,2" fill="black"/>
+        </symbol>
+    </svg>
+
+    <!-- 탭 콘텐츠 -->
+    <div id="tab-1" class="tab-content active">
+        <div class="grid">
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-all-set"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div id="tab-2" class="tab-content">
+        <div class="grid">
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-opacity-off"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div id="tab-3" class="tab-content">
+        <div class="grid">
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-scale-off"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div id="tab-4" class="tab-content">
+        <div class="grid">
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+            <svg onclick="pointClick(this)">
+                <use xlink:href="#icon-color-off"></use>
+            </svg>
+        </div>
+    </div>
+
+    <!-- 커서 이미지 (SVG로 변경) -->
+    <svg id="cursor" class="cursor" style="display: none;">
+        <use xlink:href="#icon-cursor"></use>
+    </svg>
+
+    <script>
+        let currentCursorImage = null;
+        const stages = [1, 2, 3, 4]; // 스테이지 배열
+        let clearedStages = []; // 클리어한 스테이지 저장
+        const stageTimes = {}; // 각 스테이지 클리어 시간 저장
+        let stageStartTime = Date.now(); // 현재 스테이지 시작 시간
+
+        function showTab(tabNumber) {
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(`tab-${tabNumber}`).classList.add('active');
+            stageStartTime = Date.now(); // 스테이지 시작 시간 기록
+
+            if (tabNumber === 1) {
+                gameMode1();
+            } else if (tabNumber === 2) {
+                gameMode2();
+                hideCursor();
+            } else if (tabNumber === 3){
+                gameMode3();
+                hideCursor();
+            } else if(tabNumber === 4){
+                gameMode4();
+                hideCursor();
+            } else {
+                hideCursor();
+            }
+        }
+
+        function startRandomStage() {
+            if (stages.length === 0) {
+                showStageTimes();
+                return; // 모든 스테이지를 클리어한 경우 종료
+            }
+
+            const randomIndex = Math.floor(Math.random() * stages.length);
+            const randomStage = stages[randomIndex];
+            showTab(randomStage);
+        }
+
+        function recordStageTime(stageNumber) {
+            const endTime = Date.now();
+            stageTimes[stageNumber] = ((endTime - stageStartTime) / 1000).toFixed(2); // 경과 시간 (초 단위로 저장)
+        }
+
+        function showStageTimes() {
+            let message = "";
+            for (const [stage, time] of Object.entries(stageTimes)) {
+                //message += `${stage}: ${time}초\n`;
+                if (stage === "1") {
+                    message += `화살표: ${time}초<br>`;
+                } else if(stage === "2"){
+                    message += `투명도: ${time}초<br>`;
+                } else if(stage === "3"){
+                    message += `크기: ${time}초<br>`;
+                } else if(stage === "4"){
+                    message += `색상: ${time}초<br>`;
+                }
+            }
+            document.querySelector('.tab-content.active').innerHTML = "<div><b>모든 챕터 클리어!!</b><br><br>"+message+"</div>";
+        }
+
+        function gameMode1() {
+            const images = Array.from(document.querySelectorAll('#tab-1 .grid svg')).filter(svg => svg.style.visibility !== 'hidden');
+
+            if (images.length === 0) {
+                recordStageTime(1);
+                clearedStages.push(1); // 스테이지 1 클리어
+                stages.splice(stages.indexOf(1), 1); // 클리어한 스테이지 목록에서 제거
+                startRandomStage(); // 다음 스테이지 랜덤 선택
+                hideCursor();
+                return;
+            }
+
+            const randomIndex = Math.floor(Math.random() * images.length);
+            currentCursorImage = images[randomIndex];
+            const rect = currentCursorImage.getBoundingClientRect();
+
+            const cursor = document.getElementById('cursor');
+            cursor.style.left = rect.left + window.scrollX + 'px';
+            cursor.style.top = rect.top + window.scrollY + 'px';
+            cursor.style.transform = 'translate(350%, -150%)';
+            cursor.style.display = 'block';
+        }
+
+        function hideCursor() {
+            const cursor = document.getElementById('cursor');
+            cursor.style.display = 'none';
+        }
+
+        function gameMode2() {
+            const images = Array.from(document.querySelectorAll('#tab-2 .grid svg')).filter(svg => svg.style.visibility !== 'hidden');
+
+            if (images.length > 0) {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                images[randomIndex].innerHTML = '<use xlink:href="#icon-color-off"></use>';
+            }
+
+            if (images.every(svg => svg.innerHTML.includes("icon-color-off")) && images.length === 0) {
+                recordStageTime(2);
+                clearedStages.push(2); // 스테이지 2 클리어
+                stages.splice(stages.indexOf(2), 1); // 클리어한 스테이지 목록에서 제거
+                startRandomStage(); // 다음 스테이지 랜덤 선택
+            }
+        }
+
+        function gameMode3() {
+            const images = Array.from(document.querySelectorAll('#tab-3 .grid svg')).filter(svg => svg.style.visibility !== 'hidden');
+
+            if (images.length > 0) {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                images[randomIndex].style.transform = "scale(1.3)";
+            }
+
+            if (images.every(svg => svg.style.transform === "scale(1.3)") && images.length === 0) {
+                recordStageTime(3);
+                clearedStages.push(3); // 스테이지 3 클리어
+                stages.splice(stages.indexOf(3), 1); // 클리어한 스테이지 목록에서 제거
+                startRandomStage(); // 다음 스테이지 랜덤 선택
+            }
+        }
+
+        function gameMode4() {
+            const images = Array.from(document.querySelectorAll('#tab-4 .grid svg')).filter(svg => svg.style.visibility !== 'hidden');
+
+            if (images.length > 0) {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                images[randomIndex].innerHTML = '<use xlink:href="#icon-color-on"></use>';
+            }
+
+            if (images.every(svg => svg.innerHTML.includes("icon-color-on")) && images.length === 0) {
+                recordStageTime(4);
+                clearedStages.push(4); // 스테이지 4 클리어
+                stages.splice(stages.indexOf(4), 1); // 클리어한 스테이지 목록에서 제거
+                startRandomStage(); // 다음 스테이지 랜덤 선택
+            }
+        }
+
+        function pointClick(element) {
+            if (element.closest('#tab-1') && element !== currentCursorImage) return;
+
+            if (element.closest('#tab-2') && element.innerHTML.includes("icon-color-off")) {
+                element.style.visibility = 'hidden';
+                gameMode2();
+            } else if (element.closest('#tab-3') && element.style.transform === "scale(1.3)") {
+                element.style.visibility = 'hidden';
+                gameMode3();
+            } else if(element.closest('#tab-4') && element.innerHTML.includes("icon-color-on")){
+                element.style.visibility = 'hidden';
+                gameMode4();
+            } else if (element === currentCursorImage) {
+                element.style.visibility = 'hidden';
+                gameMode1();
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", startRandomStage);
+    </script>
+</body>
+</html>
