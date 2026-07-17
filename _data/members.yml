@@ -1,11 +1,11 @@
 current:
-  - name: "Member Name"
-    role: "MS Student"
+  - name: "Namyoon Kim"
+    role: "Undergraduate student"
     research: "Research interest placeholder"
     photo: ""
 
 alumni:
-  - name: "Alumni Name"
-    role: "MS"
-    year: "2024"
-    current: "현재 소속 placeholder"
+  - name: "N/A"
+    role: ""
+    year: ""
+    current: ""
