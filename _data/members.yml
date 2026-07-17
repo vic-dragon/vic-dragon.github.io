@@ -1,0 +1,11 @@
+current:
+  - name: "Member Name"
+    role: "MS Student"
+    research: "Research interest placeholder"
+    photo: ""
+
+alumni:
+  - name: "Alumni Name"
+    role: "MS"
+    year: "2024"
+    current: "현재 소속 placeholder"

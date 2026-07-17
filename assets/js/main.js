@@ -40,7 +40,7 @@ document.querySelectorAll('.reveal').forEach(el => {
   }, { threshold: 0.12 }).observe(el);
 });
 
-// ── STICKY RESEARCH ──
+// ── STICKY RESEARCH (자동으로 카드 개수 감지) ──
 const stickyContainer = document.getElementById('sticky-container');
 const cards = document.querySelectorAll('.research-card');
 const dots = document.querySelectorAll('.dot');
@@ -49,21 +49,25 @@ const totalCards = cards.length;
 let currentCard = -1;
 
 function updateCards() {
-  if (!stickyContainer) return;
+  if (!stickyContainer || totalCards === 0) return;
   const rect = stickyContainer.getBoundingClientRect();
   const scrolled = -rect.top;
   const scrollRange = stickyContainer.offsetHeight - innerHeight;
   if (scrolled < 0 || scrolled > scrollRange) {
     progressDots.classList.remove('visible');
-    if (scrolled < 0) { cards.forEach(c => c.classList.remove('active','exit')); currentCard = -1; }
+    if (scrolled < 0) {
+      cards.forEach(c => c.classList.remove('active', 'exit'));
+      currentCard = -1;
+    }
     return;
   }
   progressDots.classList.add('visible');
   const index = Math.round((scrolled / scrollRange) * (totalCards - 1));
   if (index !== currentCard) {
-    const prev = currentCard; currentCard = index;
+    const prev = currentCard;
+    currentCard = index;
     cards.forEach((c, i) => {
-      c.classList.remove('active','exit');
+      c.classList.remove('active', 'exit');
       if (i === index) c.classList.add('active');
       else if (i === prev && i < index) {
         c.classList.add('exit');
@@ -73,6 +77,12 @@ function updateCards() {
     dots.forEach((d, i) => d.classList.toggle('active', i === index));
   }
 }
+
+// 카드 개수에 따라 sticky-container 높이 자동 조정
+if (stickyContainer && totalCards > 0) {
+  stickyContainer.style.height = (totalCards + 1) * 100 + 'vh';
+}
+
 window.addEventListener('scroll', updateCards, { passive: true });
 updateCards();
 

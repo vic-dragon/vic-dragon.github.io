@@ -9,9 +9,9 @@ layout: default
     <li class="nav-item">
       <a href="#research">Research <span class="dropdown-arrow">▾</span></a>
       <div class="dropdown">
-        <a href="#research">Biomedical Imaging & Clinical AI</a>
-        <a href="#research">Statistical Methodology</a>
-        <a href="#research">Population Health</a>
+        {% for r in site.data.research %}
+        <a href="#research">{{ r.title }} {{ r.title_em }}</a>
+        {% endfor %}
       </div>
     </li>
     <li class="nav-item">
@@ -40,12 +40,12 @@ layout: default
 <!-- HERO -->
 <section id="hero">
   <canvas id="star-canvas"></canvas>
-  <p class="hero-eyebrow">Statistics &amp; Applied Research Laboratory</p>
-  <h1 class="hero-title"><span>STAR</span><br>Lab</h1>
-  <p class="hero-sub">Jeonbuk National University</p>
-  <p class="hero-dept">Department of Statistics · Institute of Applied Statistics</p>
+  <p class="hero-eyebrow">{{ site.data.hero.eyebrow }}</p>
+  <h1 class="hero-title"><span>{{ site.data.hero.title }}</span><br>{{ site.data.hero.title_sub }}</h1>
+  <p class="hero-sub">{{ site.data.hero.subtitle }}</p>
+  <p class="hero-dept">{{ site.data.hero.dept }}</p>
   <div class="scroll-hint">
-    <span>Scroll</span>
+    <span>{{ site.data.hero.scroll_text }}</span>
     <div class="scroll-line"></div>
   </div>
 </section>
@@ -60,106 +60,38 @@ layout: default
 
   <div class="sticky-container" id="sticky-container">
     <div class="sticky-stage">
-
-      <div class="research-card" data-index="0">
+      {% assign total = site.data.research | size %}
+      {% for r in site.data.research %}
+      <div class="research-card" data-index="{{ forloop.index0 }}">
         <div class="card-inner">
           <div class="card-text">
-            <div class="card-number">01 / 03</div>
-            <h3 class="card-title">Biomedical Imaging<br>&amp; <em>Clinical AI</em></h3>
-            <p class="card-desc">We develop and evaluate statistical and AI-based methods for medical image analysis — spanning CT, MRI, fMRI, and DTI — with emphasis on rigorous validation and reproducibility of clinical AI systems.</p>
-            <p class="card-desc">Research areas include neuroimaging processing, pulmonary CT modeling, and fairness &amp; reproducibility evaluation of deep learning diagnostics.</p>
+            <div class="card-number">{{ r.number }} / 0{{ total }}</div>
+            <h3 class="card-title">{{ r.title }}<br><em>{{ r.title_em }}</em></h3>
+            <p class="card-desc">{{ r.desc1 }}</p>
+            <p class="card-desc">{{ r.desc2 }}</p>
             <div class="card-tags">
-              <span class="tag">CT / MRI / fMRI</span>
-              <span class="tag">Neuroimaging</span>
-              <span class="tag">GLMM · GEE</span>
-              <span class="tag">DL Reproducibility</span>
-              <span class="tag">Survival Analysis</span>
+              {% for tag in r.tags %}
+              <span class="tag">{{ tag }}</span>
+              {% endfor %}
             </div>
           </div>
           <div class="card-right">
             <div class="card-learn">
               <p class="card-learn-title">Students will learn</p>
               <ul>
-                <li>Medical image data preprocessing & analysis</li>
-                <li>GLMM, GEE, Cox PH, competing risks</li>
-                <li>DL model evaluation & reproducibility</li>
-                <li>Neuroimaging analysis pipelines</li>
+                {% for item in r.learn %}
+                <li>{{ item }}</li>
+                {% endfor %}
               </ul>
             </div>
             <div class="card-collab-box">
               <p class="card-collab-title">Collaborate with us if you have</p>
-              <p>Medical imaging data (CT/MRI/fMRI) and need rigorous statistical analysis, or AI diagnostic systems that need independent validation.</p>
+              <p>{{ r.collab }}</p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="research-card" data-index="1">
-        <div class="card-inner">
-          <div class="card-text">
-            <div class="card-number">02 / 03</div>
-            <h3 class="card-title">Statistical<br><em>Methodology Development</em></h3>
-            <p class="card-desc">We develop novel statistical methods for complex, real-world data and validate them through rigorous simulation and application. Current focus areas include uncertainty quantification and dynamic network inference.</p>
-            <p class="card-desc">Methods are developed for direct application: generalized fiducial inference for complex models, and dynamic network clustering for time-varying social, biological, and brain networks.</p>
-            <div class="card-tags">
-              <span class="tag">Fiducial Inference</span>
-              <span class="tag">Dynamic Networks</span>
-              <span class="tag">Brain Connectivity</span>
-              <span class="tag">Social Networks</span>
-              <span class="tag">R / Python Packages</span>
-            </div>
-          </div>
-          <div class="card-right">
-            <div class="card-learn">
-              <p class="card-learn-title">Students will learn</p>
-              <ul>
-                <li>Statistical method development end-to-end</li>
-                <li>Network analysis & graph theory</li>
-                <li>R/Python package development</li>
-                <li>Simulation study design</li>
-              </ul>
-            </div>
-            <div class="card-collab-box">
-              <p class="card-collab-title">Collaborate with us if you have</p>
-              <p>Time-varying network data (social, biological, neural) or complex models where uncertainty quantification is challenging with existing methods.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="research-card" data-index="2">
-        <div class="card-inner">
-          <div class="card-text">
-            <div class="card-number">03 / 03</div>
-            <h3 class="card-title">Population Health<br>&amp; <em>Epidemiology</em></h3>
-            <p class="card-desc">Using large-scale population data including KNHANES, we investigate associations between dietary patterns, lifestyle factors, and chronic disease outcomes — with a focus on Korean food culture and public health.</p>
-            <p class="card-desc">We specialize in complex survey design analysis and appropriate statistical modeling for nationally representative epidemiological data.</p>
-            <div class="card-tags">
-              <span class="tag">KNHANES</span>
-              <span class="tag">Complex Survey Design</span>
-              <span class="tag">Nutritional Epidemiology</span>
-              <span class="tag">K-Food</span>
-              <span class="tag">GLM</span>
-            </div>
-          </div>
-          <div class="card-right">
-            <div class="card-learn">
-              <p class="card-learn-title">Students will learn</p>
-              <ul>
-                <li>Complex survey data analysis</li>
-                <li>Large-scale public data (KNHANES, 건보)</li>
-                <li>Epidemiological study design</li>
-                <li>Logistic / Poisson regression, GLM</li>
-              </ul>
-            </div>
-            <div class="card-collab-box">
-              <p class="card-collab-title">Collaborate with us if you have</p>
-              <p>Public health or nutritional research questions using population-level data, or interests in Korean dietary patterns and chronic disease.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -176,36 +108,65 @@ layout: default
       <div class="people-tab" data-tab="members">Members</div>
       <div class="people-tab" data-tab="alumni">Alumni</div>
     </div>
+
     <div class="people-panel active" id="panel-pi">
       <div class="pi-card">
-        <div class="pi-avatar">Photo</div>
+        <div class="pi-avatar">
+          {% if site.data.pi.photo %}
+          <img src="{{ site.data.pi.photo }}" alt="{{ site.data.pi.name }}">
+          {% else %}
+          Photo
+          {% endif %}
+        </div>
         <div>
-          <h3 class="pi-name">Luke Hwang</h3>
-          <p class="pi-name-ko">황승용 · Associate Professor</p>
+          <h3 class="pi-name">{{ site.data.pi.name }}</h3>
+          <p class="pi-name-ko">{{ site.data.pi.name_ko }} · {{ site.data.pi.title }}</p>
           <div class="pi-divider"></div>
-          <p class="pi-bio">Associate Professor in the Department of Statistics and Institute of Applied Statistics at Jeonbuk National University. Previously Senior Biostatistician at GRAIL, Inc. (Silicon Valley).</p>
-          <p class="pi-bio">Research spans statistical methodology development, medical imaging analysis, biomedical AI evaluation, and nutritional epidemiology.</p>
+          <p class="pi-bio">{{ site.data.pi.bio1 }}</p>
+          <p class="pi-bio">{{ site.data.pi.bio2 }}</p>
           <div class="pi-links">
-            <a href="mailto:luke@jbnu.ac.kr" class="pi-link">Email</a>
-            <a href="#" class="pi-link">Google Scholar</a>
-            <a href="#" class="pi-link">GitHub</a>
-            <a href="#" class="pi-link">CV</a>
+            <a href="mailto:{{ site.data.pi.email }}" class="pi-link">Email</a>
+            <a href="{{ site.data.pi.google_scholar }}" class="pi-link">Google Scholar</a>
+            <a href="{{ site.data.pi.github }}" class="pi-link">GitHub</a>
+            <a href="{{ site.data.pi.cv }}" class="pi-link">CV</a>
           </div>
         </div>
       </div>
     </div>
+
     <div class="people-panel" id="panel-members">
       <div class="members-grid">
+        {% for member in site.data.members.current %}
         <div class="member-card">
-          <div class="member-avatar">MS</div>
-          <div class="member-name">Member Name</div>
-          <div class="member-role">MS Student</div>
-          <div class="member-desc">Research interest placeholder</div>
+          <div class="member-avatar">
+            {% if member.photo %}
+            <img src="{{ member.photo }}" alt="{{ member.name }}">
+            {% else %}
+            {{ member.role | slice: 0, 2 | upcase }}
+            {% endif %}
+          </div>
+          <div class="member-name">{{ member.name }}</div>
+          <div class="member-role">{{ member.role }}</div>
+          <div class="member-desc">{{ member.research }}</div>
         </div>
+        {% endfor %}
       </div>
     </div>
+
     <div class="people-panel" id="panel-alumni">
+      {% if site.data.members.alumni %}
+      <div class="members-grid">
+        {% for alum in site.data.members.alumni %}
+        <div class="member-card">
+          <div class="member-name">{{ alum.name }}</div>
+          <div class="member-role">{{ alum.role }} · {{ alum.year }}</div>
+          <div class="member-desc">{{ alum.current }}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% else %}
       <div class="placeholder-box">Alumni information coming soon</div>
+      {% endif %}
     </div>
   </div>
 </section>
@@ -331,7 +292,7 @@ layout: default
           </div>
         </div>
       </div>
-      <a href="mailto:luke@jbnu.ac.kr" class="join-cta">Get in touch →</a>
+      <a href="mailto:{{ site.data.pi.email }}" class="join-cta">Get in touch →</a>
     </div>
   </div>
 </section>
@@ -369,7 +330,7 @@ layout: default
 
 <!-- PROGRESS DOTS -->
 <div class="progress-dots" id="progress-dots">
-  <div class="dot active" data-dot="0"></div>
-  <div class="dot" data-dot="1"></div>
-  <div class="dot" data-dot="2"></div>
+  {% for r in site.data.research %}
+  <div class="dot {% if forloop.first %}active{% endif %}" data-dot="{{ forloop.index0 }}"></div>
+  {% endfor %}
 </div>

@@ -181,3 +181,16 @@ footer { border-top: 1px solid rgba(255,255,255,0.06); padding: 3rem 4rem; displ
   .footer-right { text-align: left; }
   .progress-dots { right: 1rem; }
 }
+
+.ko {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+body {
+  word-break: keep-all;
+}
+.pi-name-ko {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+.hero-sub, .hero-dept {
+  font-family: 'Gowun Dodum', sans-serif;
+}
