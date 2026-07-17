@@ -1,0 +1,17 @@
+- name: "NARM"
+  icon: "⚙️"
+  desc: "Nonparametric Adaptive Regression on Manifolds. R package for functional estimation on spheres and tori."
+  url: "https://github.com/vic-dragon"
+  link_text: "GitHub"
+
+- name: "BJS Estimator"
+  icon: "📦"
+  desc: "R implementation of the Bayesian Joint Shrinkage estimator for fiber orientation distributions."
+  url: "https://github.com/vic-dragon"
+  link_text: "GitHub"
+
+- name: "Lecture Notes"
+  icon: "📚"
+  desc: "Course materials for GLM, Applied Biostatistics, and R programming — freely available for students."
+  url: "#"
+  link_text: "Coming Soon"

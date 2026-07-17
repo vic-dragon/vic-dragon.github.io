@@ -1,0 +1,15 @@
+- code: "STAT · Undergraduate"
+  name: "Applied Statistics / GLM"
+  desc: "Generalized linear models including logistic regression, Poisson regression, and model diagnostics using R."
+
+- code: "STAT · Undergraduate"
+  name: "Introduction to Biostatistics"
+  desc: "Statistical methods for life sciences including survival analysis, clinical trial design, and SAS-based analysis."
+
+- code: "STAT · Graduate"
+  name: "Advanced Biostatistics"
+  desc: "Mixed effects models, GEE, longitudinal data analysis, and applications in medical research."
+
+- code: "DATA · Undergraduate"
+  name: "Introduction to Big Data"
+  desc: "Python and R-based data analysis, machine learning foundations, and real-world data applications."

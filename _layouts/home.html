@@ -1,0 +1,375 @@
+---
+layout: default
+---
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo" onclick="scrollTo({top:0,behavior:'smooth'})">STAR Lab</div>
+  <ul class="nav-links">
+    <li class="nav-item">
+      <a href="#research">Research <span class="dropdown-arrow">▾</span></a>
+      <div class="dropdown">
+        <a href="#research">Biomedical Imaging & Clinical AI</a>
+        <a href="#research">Statistical Methodology</a>
+        <a href="#research">Population Health</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="#people">People <span class="dropdown-arrow">▾</span></a>
+      <div class="dropdown">
+        <a href="#people">PI</a>
+        <a href="#people">Members</a>
+        <a href="#people">Alumni</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="#publications">Publications <span class="dropdown-arrow">▾</span></a>
+      <div class="dropdown">
+        <a href="#publications">Published</a>
+        <a href="#publications">Under Review</a>
+        <a href="#publications">In Preparation</a>
+      </div>
+    </li>
+    <li class="nav-item"><a href="#news">News</a></li>
+    <li class="nav-item"><a href="#teaching">Teaching</a></li>
+    <li class="nav-item"><a href="#join">Join Us</a></li>
+    <li class="nav-item"><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="star-canvas"></canvas>
+  <p class="hero-eyebrow">Statistics &amp; Applied Research Laboratory</p>
+  <h1 class="hero-title"><span>STAR</span><br>Lab</h1>
+  <p class="hero-sub">Jeonbuk National University</p>
+  <p class="hero-dept">Department of Statistics · Institute of Applied Statistics</p>
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="research-intro reveal">
+    <p class="section-label">Our Research</p>
+    <h2 class="section-title">Where statistical methodology<br>meets real-world complexity</h2>
+    <p class="section-desc">We develop rigorous statistical methods and apply them to complex biomedical, epidemiological, and network data — bridging theory and practice across diverse scientific domains.</p>
+  </div>
+
+  <div class="sticky-container" id="sticky-container">
+    <div class="sticky-stage">
+
+      <div class="research-card" data-index="0">
+        <div class="card-inner">
+          <div class="card-text">
+            <div class="card-number">01 / 03</div>
+            <h3 class="card-title">Biomedical Imaging<br>&amp; <em>Clinical AI</em></h3>
+            <p class="card-desc">We develop and evaluate statistical and AI-based methods for medical image analysis — spanning CT, MRI, fMRI, and DTI — with emphasis on rigorous validation and reproducibility of clinical AI systems.</p>
+            <p class="card-desc">Research areas include neuroimaging processing, pulmonary CT modeling, and fairness &amp; reproducibility evaluation of deep learning diagnostics.</p>
+            <div class="card-tags">
+              <span class="tag">CT / MRI / fMRI</span>
+              <span class="tag">Neuroimaging</span>
+              <span class="tag">GLMM · GEE</span>
+              <span class="tag">DL Reproducibility</span>
+              <span class="tag">Survival Analysis</span>
+            </div>
+          </div>
+          <div class="card-right">
+            <div class="card-learn">
+              <p class="card-learn-title">Students will learn</p>
+              <ul>
+                <li>Medical image data preprocessing & analysis</li>
+                <li>GLMM, GEE, Cox PH, competing risks</li>
+                <li>DL model evaluation & reproducibility</li>
+                <li>Neuroimaging analysis pipelines</li>
+              </ul>
+            </div>
+            <div class="card-collab-box">
+              <p class="card-collab-title">Collaborate with us if you have</p>
+              <p>Medical imaging data (CT/MRI/fMRI) and need rigorous statistical analysis, or AI diagnostic systems that need independent validation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-card" data-index="1">
+        <div class="card-inner">
+          <div class="card-text">
+            <div class="card-number">02 / 03</div>
+            <h3 class="card-title">Statistical<br><em>Methodology Development</em></h3>
+            <p class="card-desc">We develop novel statistical methods for complex, real-world data and validate them through rigorous simulation and application. Current focus areas include uncertainty quantification and dynamic network inference.</p>
+            <p class="card-desc">Methods are developed for direct application: generalized fiducial inference for complex models, and dynamic network clustering for time-varying social, biological, and brain networks.</p>
+            <div class="card-tags">
+              <span class="tag">Fiducial Inference</span>
+              <span class="tag">Dynamic Networks</span>
+              <span class="tag">Brain Connectivity</span>
+              <span class="tag">Social Networks</span>
+              <span class="tag">R / Python Packages</span>
+            </div>
+          </div>
+          <div class="card-right">
+            <div class="card-learn">
+              <p class="card-learn-title">Students will learn</p>
+              <ul>
+                <li>Statistical method development end-to-end</li>
+                <li>Network analysis & graph theory</li>
+                <li>R/Python package development</li>
+                <li>Simulation study design</li>
+              </ul>
+            </div>
+            <div class="card-collab-box">
+              <p class="card-collab-title">Collaborate with us if you have</p>
+              <p>Time-varying network data (social, biological, neural) or complex models where uncertainty quantification is challenging with existing methods.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="research-card" data-index="2">
+        <div class="card-inner">
+          <div class="card-text">
+            <div class="card-number">03 / 03</div>
+            <h3 class="card-title">Population Health<br>&amp; <em>Epidemiology</em></h3>
+            <p class="card-desc">Using large-scale population data including KNHANES, we investigate associations between dietary patterns, lifestyle factors, and chronic disease outcomes — with a focus on Korean food culture and public health.</p>
+            <p class="card-desc">We specialize in complex survey design analysis and appropriate statistical modeling for nationally representative epidemiological data.</p>
+            <div class="card-tags">
+              <span class="tag">KNHANES</span>
+              <span class="tag">Complex Survey Design</span>
+              <span class="tag">Nutritional Epidemiology</span>
+              <span class="tag">K-Food</span>
+              <span class="tag">GLM</span>
+            </div>
+          </div>
+          <div class="card-right">
+            <div class="card-learn">
+              <p class="card-learn-title">Students will learn</p>
+              <ul>
+                <li>Complex survey data analysis</li>
+                <li>Large-scale public data (KNHANES, 건보)</li>
+                <li>Epidemiological study design</li>
+                <li>Logistic / Poisson regression, GLM</li>
+              </ul>
+            </div>
+            <div class="card-collab-box">
+              <p class="card-collab-title">Collaborate with us if you have</p>
+              <p>Public health or nutritional research questions using population-level data, or interests in Korean dietary patterns and chronic disease.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PEOPLE -->
+<section id="people">
+  <div class="section-wrap">
+    <div class="reveal">
+      <p class="section-label">People</p>
+      <h2 class="section-title">Our Team</h2>
+    </div>
+    <div class="people-tabs reveal">
+      <div class="people-tab active" data-tab="pi">PI</div>
+      <div class="people-tab" data-tab="members">Members</div>
+      <div class="people-tab" data-tab="alumni">Alumni</div>
+    </div>
+    <div class="people-panel active" id="panel-pi">
+      <div class="pi-card">
+        <div class="pi-avatar">Photo</div>
+        <div>
+          <h3 class="pi-name">Luke Hwang</h3>
+          <p class="pi-name-ko">황승용 · Associate Professor</p>
+          <div class="pi-divider"></div>
+          <p class="pi-bio">Associate Professor in the Department of Statistics and Institute of Applied Statistics at Jeonbuk National University. Previously Senior Biostatistician at GRAIL, Inc. (Silicon Valley).</p>
+          <p class="pi-bio">Research spans statistical methodology development, medical imaging analysis, biomedical AI evaluation, and nutritional epidemiology.</p>
+          <div class="pi-links">
+            <a href="mailto:luke@jbnu.ac.kr" class="pi-link">Email</a>
+            <a href="#" class="pi-link">Google Scholar</a>
+            <a href="#" class="pi-link">GitHub</a>
+            <a href="#" class="pi-link">CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="people-panel" id="panel-members">
+      <div class="members-grid">
+        <div class="member-card">
+          <div class="member-avatar">MS</div>
+          <div class="member-name">Member Name</div>
+          <div class="member-role">MS Student</div>
+          <div class="member-desc">Research interest placeholder</div>
+        </div>
+      </div>
+    </div>
+    <div class="people-panel" id="panel-alumni">
+      <div class="placeholder-box">Alumni information coming soon</div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+  <div class="section-wrap">
+    <div class="reveal">
+      <p class="section-label">Publications</p>
+      <h2 class="section-title">Research Output</h2>
+    </div>
+    <div class="pub-tabs reveal">
+      <div class="pub-tab active" data-tab="published">Published</div>
+      <div class="pub-tab" data-tab="review">Under Review</div>
+      <div class="pub-tab" data-tab="prep">In Preparation</div>
+    </div>
+    <div class="pub-panel active" id="panel-published">
+      {% for pub in site.data.publications.published %}
+      <div class="pub-item">
+        <div class="pub-year">{{ pub.year }}</div>
+        <div>
+          <div class="pub-title">{{ pub.title }}</div>
+          <div class="pub-authors">{{ pub.authors }}</div>
+          <div class="pub-journal">{{ pub.journal }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="pub-panel" id="panel-review">
+      {% for pub in site.data.publications.under_review %}
+      <div class="pub-item">
+        <div class="pub-year">{{ pub.year }}</div>
+        <div>
+          <div class="pub-title">{{ pub.title }} <span class="pub-badge badge-review">Under Review</span></div>
+          <div class="pub-authors">{{ pub.authors }}</div>
+          <div class="pub-journal">{{ pub.journal }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="pub-panel" id="panel-prep">
+      {% for pub in site.data.publications.in_preparation %}
+      <div class="pub-item">
+        <div class="pub-year">{{ pub.year }}</div>
+        <div>
+          <div class="pub-title">{{ pub.title }} <span class="pub-badge badge-prep">In Preparation</span></div>
+          <div class="pub-authors">{{ pub.authors }}</div>
+          <div class="pub-journal">{{ pub.journal }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+  <div class="section-wrap">
+    <div class="reveal">
+      <p class="section-label">News & Updates</p>
+      <h2 class="section-title">Latest from STAR Lab</h2>
+    </div>
+    <div class="news-list reveal">
+      {% for item in site.data.news %}
+      <div class="news-item">
+        <div class="news-date">{{ item.date }}</div>
+        <div>
+          <div class="news-title">{{ item.title }}</div>
+          <div class="news-body">{{ item.body }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING -->
+<section id="teaching">
+  <div class="section-wrap">
+    <div class="reveal">
+      <p class="section-label">Teaching</p>
+      <h2 class="section-title">Courses</h2>
+    </div>
+    <div class="course-grid reveal">
+      {% for course in site.data.courses %}
+      <div class="course-card">
+        <div class="course-code">{{ course.code }}</div>
+        <div class="course-name">{{ course.name }}</div>
+        <div class="course-desc">{{ course.desc }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- JOIN US -->
+<section id="join">
+  <div class="section-wrap">
+    <div class="join-inner reveal">
+      <p class="section-label">Join Us</p>
+      <h2 class="section-title">Interested in joining STAR Lab?</h2>
+      <p class="join-body">We welcome motivated students and researchers who are curious about statistical methodology and its applications in biomedical and public health sciences. If you're interested in any of our research areas, feel free to reach out.</p>
+      <div class="join-positions">
+        <div class="join-pos">
+          <div class="join-pos-dot"></div>
+          <div>
+            <div class="join-pos-name">MS / PhD Students</div>
+            <div class="join-pos-desc">Strong interest in statistics, mathematics, or biomedical research. Programming experience in R or Python is a plus.</div>
+          </div>
+        </div>
+        <div class="join-pos">
+          <div class="join-pos-dot"></div>
+          <div>
+            <div class="join-pos-name">Undergraduate Research Assistants</div>
+            <div class="join-pos-desc">JBNU undergraduates interested in gaining research experience in applied statistics and data science.</div>
+          </div>
+        </div>
+        <div class="join-pos">
+          <div class="join-pos-dot"></div>
+          <div>
+            <div class="join-pos-name">Collaborators</div>
+            <div class="join-pos-desc">Clinicians, epidemiologists, or researchers with data and open statistical questions — we'd love to hear from you.</div>
+          </div>
+        </div>
+      </div>
+      <a href="mailto:luke@jbnu.ac.kr" class="join-cta">Get in touch →</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources">
+  <div class="section-wrap">
+    <div class="reveal">
+      <p class="section-label">Resources</p>
+      <h2 class="section-title">Code & Data</h2>
+      <p class="section-desc">Open-source software and resources from our lab.</p>
+    </div>
+    <div class="resource-grid reveal">
+      {% for resource in site.data.resources %}
+      <a href="{{ resource.url }}" class="resource-card">
+        <div class="resource-icon">{{ resource.icon }}</div>
+        <div class="resource-name">{{ resource.name }}</div>
+        <div class="resource-desc">{{ resource.desc }}</div>
+        <div class="resource-link">{{ resource.link_text }} →</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-logo">STAR Lab</div>
+  <div class="footer-right">
+    Statistics &amp; Applied Research Laboratory<br>
+    Department of Statistics, Jeonbuk National University<br>
+    Jeonju, Jeollabuk-do, South Korea
+  </div>
+</footer>
+
+<!-- PROGRESS DOTS -->
+<div class="progress-dots" id="progress-dots">
+  <div class="dot active" data-dot="0"></div>
+  <div class="dot" data-dot="1"></div>
+  <div class="dot" data-dot="2"></div>
+</div>

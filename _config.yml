@@ -1,0 +1,21 @@
+title: STAR Lab
+description: Statistics & Applied Research Laboratory
+url: "https://vic-dragon.github.io"
+baseurl: ""
+theme: null
+
+plugins:
+  - jekyll-seo-tag
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  people:
+    output: true
+  publications:
+    output: false
+  news:
+    output: false
+  courses:
+    output: false
