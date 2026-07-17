@@ -1,13 +1,13 @@
 - name: "NARM"
   icon: "⚙️"
-  desc: "Nonparametric Adaptive Regression on Manifolds. R package for functional estimation on spheres and tori."
-  url: "https://github.com/vic-dragon"
+  desc: "Estimating Spatially-Smoothed Fiber Orientation Distribution"
+  url: "https://github.com/jie108/NARM"
   link_text: "GitHub"
 
 - name: "BJS Estimator"
-  icon: "📦"
-  desc: "R implementation of the Bayesian Joint Shrinkage estimator for fiber orientation distributions."
-  url: "https://github.com/vic-dragon"
+  icon: "⚙️"
+  desc: "Blockwise James-Stein estimator for Fiber Orientation Distribution"
+  url: "https://github.com/vic-dragon/BJS"
   link_text: "GitHub"
 
 - name: "Lecture Notes"
