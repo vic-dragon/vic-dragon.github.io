@@ -1,15 +1,19 @@
 - code: "STAT · Undergraduate"
-  name: "Applied Statistics / GLM"
-  desc: "Generalized linear models including logistic regression, Poisson regression, and model diagnostics using R."
+  name: "통계적 사고와 사회 (Statistical Thinking and Society)"
+  desc: "An introduction to statistical thinking for non-majors. Learn how data shapes decisions in everyday life."
 
 - code: "STAT · Undergraduate"
-  name: "Introduction to Biostatistics"
-  desc: "Statistical methods for life sciences including survival analysis, clinical trial design, and SAS-based analysis."
+  name: "R 프로그래밍 (R Programming)"
+  desc: "Introduction to statistical computing using R - datan manipulation, visualization and statistical analysis"
+
+- code: "STAT · Undergraduate"
+  name: "생명과학자료분석 (Statistical Analysis for Life Science)"
+  desc: "Statistical methods for life sciences, clinical trial design, and SAS-based analysis."
+
+- code: "STAT · Undergraduate"
+  name: "응용통계학 (Applied Statistics)"
+  desc: "Generalized linear models including logistic regression, Poisson regression, and model diagnostics using R."
 
 - code: "STAT · Graduate"
-  name: "Advanced Biostatistics"
-  desc: "Mixed effects models, GEE, longitudinal data analysis, and applications in medical research."
-
-- code: "DATA · Undergraduate"
-  name: "Introduction to Big Data"
-  desc: "Python and R-based data analysis, machine learning foundations, and real-world data applications."
+  name: "생물통계학 (Advanced Biostatistics)"
+  desc: "Graduate-level biostatistics. Emphasizes application to real biomedical data."
