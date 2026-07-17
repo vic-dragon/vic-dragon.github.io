@@ -1,17 +1,49 @@
 published:
-  - title: "Bayesian Joint Shrinkage Estimator for Fiber Orientation Distributions on the Sphere"
-    authors: "Hwang, S., Lee, T., Peng, J., Paul, D."
-    journal: "Annals of Applied Statistics"
-    year: 2023
 
-under_review:
-  - title: "Longitudinal CT Screening Cohort Study with Competing Risk Analysis"
-    authors: "Hwang, S. et al."
-    journal: "Thorax"
+  - title: "Gochujang attenuates colorectal cancer by promoting colonic SCFA utilization and GPCR expression despite limited recovery of microbial diversity"
+    authors: "Baek, J., Kim, J., Jeong, D., Hwang, S., Donohoe, D., Han, A.,"
+    journal: "Journal of Functional Foods"
+    year: 2026
+
+  - title: "CNNeoPP: a large language model-enhanced deep learning pipeline for personalized neoantigen prediction and liquid biopsy applications"
+    authors: "Cai, Y., Chen, R., Song, M., Wang, L., Huo, Z., Yang, D., Zhang, S., Gao, S., Hwang, S., Bai, L., Lv, Y., Cui, Y., Zhang, X."
+    journal: "Frontiers in Immunology"
+    year: 2026
+    
+  - title: "Contextualized biomedical language processing enhances ICU survival prediction"
+    authors: "Chen, R., Cai, Y., Zhang, S., Huo, Z., Song, M., Li, W., Yang, D., Hwang, S., Bai, L., Han, F., Zhang X.,"
+    journal: "iScience"
+    year: 2026
+
+  - title: "Estimating fiber orientation distribution with application to study brain lateralization using HCP D-MRI data"
+    authors: "Hwang, S., Lee, T., Paul, D., Peng, J."
+    journal: "Annals of Applied Statistics"
     year: 2024
 
-in_preparation:
-  - title: "Nonparametric Adaptive Regression on Manifolds (NARM)"
-    authors: "Hwang, S., Lee, T., Peng, J."
-    journal: "Journal of Computational and Graphical Statistics"
-    year: 2025
+  - title: "Diagnostic Accuracy of Magnetic Resonance Imaging Features and Tumor-to-Nipple Distance for Nipple-Areolar Complex Involvement: A Systematic Review and Meta-Analysis"
+    authors: "Byon, J., Hwang, S., Choi, E., Choi, H."
+    journal: "Korean journal of radiology"
+    year: 2023
+
+  - title: "Generalized Fiducial Inference for Threshold Estimation in Dose–Response and Regression Settings"
+    authors: "Hwang, S., Lai, C., Lee, T."
+    journal: "Journal of Agricultural, Biological and Environmental Statistics"
+    year: 2022
+
+  - title: "Simultaneous detection of multiple change points and community structures in time series of networks"
+    authors: "Cheung RCY., Aue A., Hwang, S., Lee, T."
+    journal: "Annals of Applied Statistics"
+    year: 2020
+
+under_review:
+  - title: "Estimating Spatially-Smoothed Fiber Orientation Distribution from Diffusion-MRI Experiments"
+    authors: "Hwang, S. et al."
+
+  - title: "Hierarchical Clustering in time-evolving dynamic networks"
+    authors: "Hwang, S. et al."
+
+  - title: "A Weighted Approach for Single Cutoff Selection in Survival Analysis"
+    authors: "Hwang, S. et al."
+
+  - title: "Rethinking Statistics Education in the Age of Generative AI: The DRIP Framework"
+    authors: "Hwang, S. et al."
