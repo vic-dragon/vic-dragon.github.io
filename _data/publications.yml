@@ -1,49 +1,78 @@
 published:
-
   - title: "Gochujang attenuates colorectal cancer by promoting colonic SCFA utilization and GPCR expression despite limited recovery of microbial diversity"
-    authors: "Baek, J., Kim, J., Jeong, D., Hwang, S., Donohoe, D., Han, A.,"
+    authors: "Baek J, Kim J, Jeong D, Hwang S, Donohoe D, Han A"
     journal: "Journal of Functional Foods"
     year: 2026
+    index: "SCIE"
+    role: "co-author"
+    doi: "#"
 
   - title: "CNNeoPP: a large language model-enhanced deep learning pipeline for personalized neoantigen prediction and liquid biopsy applications"
-    authors: "Cai, Y., Chen, R., Song, M., Wang, L., Huo, Z., Yang, D., Zhang, S., Gao, S., Hwang, S., Bai, L., Lv, Y., Cui, Y., Zhang, X."
+    authors: "Cai Y, Chen R, Song M, Wang L, Huo Z, Yang D, Zhang S, Gao S, Hwang S, Bai L, Lv Y, Cui Y, Zhang X"
     journal: "Frontiers in Immunology"
     year: 2026
-    
+    index: "SCIE"
+    role: "co-author"
+    doi: "#"
+
   - title: "Contextualized biomedical language processing enhances ICU survival prediction"
-    authors: "Chen, R., Cai, Y., Zhang, S., Huo, Z., Song, M., Li, W., Yang, D., Hwang, S., Bai, L., Han, F., Zhang X.,"
+    authors: "Chen R, Cai Y, Zhang S, Huo Z, Song M, Li W, Yang D, Hwang S, Bai L, Han F, Zhang X"
     journal: "iScience"
     year: 2026
+    index: "SCIE"
+    role: "co-author"
+    doi: "#"
 
   - title: "Estimating fiber orientation distribution with application to study brain lateralization using HCP D-MRI data"
-    authors: "Hwang, S., Lee, T., Paul, D., Peng, J."
+    authors: "Hwang S, Lee T, Paul D, Peng J"
     journal: "Annals of Applied Statistics"
     year: 2024
+    index: "SCIE"
+    role: "first"
+    doi: "#"
 
   - title: "Diagnostic Accuracy of Magnetic Resonance Imaging Features and Tumor-to-Nipple Distance for Nipple-Areolar Complex Involvement: A Systematic Review and Meta-Analysis"
-    authors: "Byon, J., Hwang, S., Choi, E., Choi, H."
-    journal: "Korean journal of radiology"
+    authors: "Byon J, Hwang S, Choi E, Choi H"
+    journal: "Korean Journal of Radiology"
     year: 2023
+    index: "SCIE"
+    role: "co-first"
+    doi: "#"
 
-  - title: "Generalized Fiducial Inference for Threshold Estimation in Dose–Response and Regression Settings"
-    authors: "Hwang, S., Lai, C., Lee, T."
+  - title: "Generalized Fiducial Inference for Threshold Estimation in Dose-Response and Regression Settings"
+    authors: "Hwang S, Lai C, Lee T"
     journal: "Journal of Agricultural, Biological and Environmental Statistics"
     year: 2022
+    index: "SCIE"
+    role: "first"
+    doi: "#"
 
   - title: "Simultaneous detection of multiple change points and community structures in time series of networks"
-    authors: "Cheung RCY., Aue A., Hwang, S., Lee, T."
-    journal: "Annals of Applied Statistics"
+    authors: "Cheung RCY, Aue A, Hwang S, Lee T"
+    journal: "IEEE Transactions on Signal and Information Processing over Networks"
     year: 2020
+    index: "SCIE"
+    role: "co-author"
+    doi: "#"
 
 under_review:
   - title: "Estimating Spatially-Smoothed Fiber Orientation Distribution from Diffusion-MRI Experiments"
-    authors: "Hwang, S. et al."
+    authors: "Hwang S et al."
+    role: "first"
 
   - title: "Hierarchical Clustering in time-evolving dynamic networks"
-    authors: "Hwang, S. et al."
+    authors: "Hwang S et al."
+    role: "first"
 
   - title: "A Weighted Approach for Single Cutoff Selection in Survival Analysis"
-    authors: "Hwang, S. et al."
+    authors: "Hwang S et al."
+    role: "first"
 
   - title: "Rethinking Statistics Education in the Age of Generative AI: The DRIP Framework"
-    authors: "Hwang, S. et al."
+    authors: "Hwang S et al."
+    role: "first"
+
+in_preparation:
+  - title: "Nonparametric Adaptive Regression on Manifolds (NARM)"
+    authors: "Hwang S, Lee TCM, Peng J"
+    role: "first"
