@@ -1,3 +1,3 @@
-title_ko: "세 가지 연구 방향"
-desc_ko: "의료영상과 임상 AI, 통계 방법론 개발, 인구집단 역학."
-desc_en: "Three lines of research: biomedical imaging and clinical AI, statistical methodology development, and population health epidemiology."
+title_ko: "We don't just remove variability. We model it."
+desc_ko: ""
+desc_en: "Most people think statistics is about computing averages. It's not. Data varies. Always. The real question is: what model best explains that variability? A mean tells you where the center is — but a good statistical model tells you how and why observations differ, across brains, across images, across populations, and with what uncertainty. That's the question driving everything we do."
