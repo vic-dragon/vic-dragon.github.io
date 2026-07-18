@@ -62,7 +62,7 @@ under_review:
 
   - title: "Hierarchical Clustering in time-evolving dynamic networks"
     authors: "Hwang S et al."
-    role: "first", "corresponding"
+    role: "first"
 
   - title: "A Weighted Approach for Single Cutoff Selection in Survival Analysis"
     authors: "Hwang S et al."
