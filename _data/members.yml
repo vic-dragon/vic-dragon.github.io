@@ -1,8 +1,12 @@
 current:
-  - name: "Namyoon Kim"
-    name_ko: "김남윤"
+  - name: "김남윤(Namyoon Kim)"
     role: "Undergraduate student"
-    research: "Research interest placeholder"
+    research: "Machine Learning for Healthcare"
+    photo: "/assets/images/namyoon.jpeg"
+
+  - name: "홍성지(Seongji Hong)"
+    role: "Master student"
+    research: ""
     photo: ""
 
 alumni:
