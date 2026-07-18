@@ -1,9 +1,22 @@
-name: “Seungyong Hwang"
-name_ko: "황승용"
-photo: "/assets/images/pi_pic.jpeg"
+name: "황승용"
+name_en: "Seungyong Hwang"
 title: "Assistant Professor"
-bio1: "Ph.D. in Biostatistics from UC Davis under the supervision of Prof. Thomas C.M. Lee and Prof. Jie Peng. Completed postdoctoral training in the Department of Genetics at Stanford University. Previously Senior Biostatistician at GRAIL, Inc."
-bio2: "Now Assistant Professor in the Department of Statistics and Institute of Applied Statistics at Jeonbuk National University. Research spans statistical methodology development, medical imaging analysis, biomedical AI evaluation, and nutritional epidemiology."
-email: “syhwang@jbnu.ac.kr"
+email: "shwang@jbnu.ac.kr"
 google_scholar: "https://scholar.google.com/citations?user=FAnclwQAAAAJ&hl=en"
 github: "https://github.com/vic-dragon"
+linkedin: "https://www.linkedin.com/in/syhwangkr/"
+cv: "#"
+photo: "/assets/images/pi_pic.jpeg"
+
+experience:
+  - role: "Senior Biostatistician"
+    org: "GRAIL, Inc., Silicon Valley"
+    period: "2022 — 2024"
+  - role: "Postdoctoral Fellow, Department of Genetics"
+    org: "Stanford University"
+    period: "2020 — 2022"
+
+education:
+  - degree: "Ph.D. in Biostatistics"
+    school: "University of California, Davis"
+    detail: "Advisors: Prof. Thomas C.M. Lee & Prof. Jie Peng"

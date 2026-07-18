@@ -211,15 +211,41 @@ layout: default
           </div>
         </div>
         <div>
-          <h3 class="pi-name reveal">{{ site.data.pi.name }}</h3>
-          <p class="pi-name-ko reveal d1">{{ site.data.pi.name_ko }} · {{ site.data.pi.title }}</p>
+          <h3 class="pi-name reveal">{{ site.data.pi.name }} <span style="font-family:var(--sans);font-size:1.2rem;font-weight:400;opacity:0.7;">({{ site.data.pi.name_en }})</span></h3>
+          <p class="pi-name-ko reveal d1">{{ site.data.pi.title }} · Department of Statistics, Jeonbuk National University</p>
           <div class="pi-divider reveal d2"></div>
-          <p class="pi-bio reveal d2">{{ site.data.pi.bio1 }}</p>
-          <p class="pi-bio reveal d2">{{ site.data.pi.bio2 }}</p>
+
+          <div class="pi-section reveal d2">
+            <p class="pi-section-title">Experience</p>
+            {% for item in site.data.pi.experience %}
+            <div class="pi-item">
+              <div class="pi-item-left">
+                <span class="pi-item-role">{{ item.role }}</span>
+                <span class="pi-item-org">{{ item.org }}</span>
+              </div>
+              {% if item.period %}<span class="pi-item-period">{{ item.period }}</span>{% endif %}
+            </div>
+            {% endfor %}
+          </div>
+
+          <div class="pi-section reveal d3">
+            <p class="pi-section-title">Education</p>
+            {% for item in site.data.pi.education %}
+            <div class="pi-item">
+              <div class="pi-item-left">
+                <span class="pi-item-role">{{ item.degree }}</span>
+                <span class="pi-item-org">{{ item.school }}</span>
+                {% if item.detail %}<span class="pi-item-detail">{{ item.detail }}</span>{% endif %}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
           <div class="pi-links reveal d3">
             <a href="mailto:{{ site.data.pi.email }}" class="pi-link">Email</a>
-            <a href="{{ site.data.pi.google_scholar }}" class="pi-link">Google Scholar</a>
-            <a href="{{ site.data.pi.github }}" class="pi-link">GitHub</a>
+            <a href="{{ site.data.pi.google_scholar }}" class="pi-link" target="_blank">Google Scholar</a>
+            <a href="{{ site.data.pi.github }}" class="pi-link" target="_blank">GitHub</a>
+            <a href="{{ site.data.pi.linkedin }}" class="pi-link" target="_blank">LinkedIn</a>
             <a href="{{ site.data.pi.cv }}" class="pi-link">CV</a>
           </div>
         </div>
