@@ -9,9 +9,9 @@ layout: default
     <li class="nav-item">
       <a href="#research-intro">Research <span class="dropdown-arrow">▾</span></a>
       <div class="dropdown">
-        <a href="#research-imaging">Biomedical Imaging</a>
-        <a href="#research-methods">Statistical Methodology</a>
-        <a href="#research-epi">Population Health</a>
+        <a href="#research-methods">Foundation — Statistical Methodology</a>
+        <a href="#research-imaging">Floor — Biomedical Imaging</a>
+        <a href="#research-epi">Framework — Population Health</a>
       </div>
     </li>
     <li class="nav-item">
@@ -48,7 +48,7 @@ layout: default
     <p class="hero-sub">{{ site.data.hero.subtitle }} · {{ site.data.hero.subtitle_en }}</p>
   </div>
   <div class="scroll-hint">
-    <span>{{ site.data.hero.scroll_text }}</span>
+    <span>Scroll</span>
     <div class="scroll-line"></div>
   </div>
 </section>
@@ -57,122 +57,131 @@ layout: default
 <section id="research-intro" class="scene dark" data-nav="dark">
   <canvas class="scene-bg" id="bg-intro"></canvas>
   <div class="scene-inner">
-    <div class="intro-grid">
-      <div>
-        <div class="intro-num reveal">03</div>
-        <h2 class="intro-statement reveal d1">
-          {{ site.data.research_intro.title_ko }}<br>
-          <em>{{ site.data.research_intro.desc_ko }}</em>
-        </h2>
-        <p style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.2em;color:var(--terra2);text-transform:uppercase;margin-bottom:1rem;margin-top:1.5rem;" class="reveal d2">Statistics as structure</p>
-        <p style="font-size:0.9rem;line-height:1.85;color:rgba(245,242,238,0.45);max-width:420px;" class="reveal d2">{{ site.data.research_intro.desc_en }}</p>
-      </div>
-      <div class="reveal d2">
-        <div class="intro-items">
-          {% for r in site.data.research %}
-          <div class="intro-item">
-            <span class="intro-item-num">0{{ forloop.index }}</span>
-            <span class="intro-item-text">{{ r.title }} {{ r.title_em }} — {{ r.tags | join: ", " }}</span>
-          </div>
-          {% endfor %}
+    <div class="intro-wrap">
+      <h2 class="intro-statement reveal">"We don't just remove variability.<br><em>We model it.</em>"</h2>
+      <p class="intro-body reveal d1">
+        Most people think statistics is about computing averages. <strong>It's not.</strong><br><br>
+        Data varies. Always. The real question is: <strong>what model best explains that variability?</strong>
+        A mean tells you where the center is — but a good statistical model tells you <em>how</em> and <em>why</em> observations differ,
+        across brains, across images, across populations, and with what uncertainty.<br><br>
+        That's the question driving everything we do.
+      </p>
+      <div class="intro-pillars reveal d2">
+        <div class="pillar">
+          <div class="pillar-word">Foundation</div>
+          <div class="pillar-desc">Statistical Methodology</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-word">Floor</div>
+          <div class="pillar-desc">Biomedical Imaging &amp; Clinical AI</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-word">Framework</div>
+          <div class="pillar-desc">Population Health &amp; Epidemiology</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- RESEARCH 1 -->
-<section id="research-imaging" class="scene light" data-nav="light">
+<!-- RESEARCH 1: FOUNDATION — Statistical Methodology -->
+<section id="research-methods" class="scene light" data-nav="light">
   <canvas class="scene-bg" id="bg-r1"></canvas>
   <div class="scene-inner">
     <div class="research-grid">
       <div>
-        <p class="r-eyebrow reveal">01 — Biomedical Imaging &amp; Clinical AI</p>
-        <h2 class="r-title reveal d1">Medical imaging<br>meets <em>statistical rigor</em>.</h2>
+        <div class="r-slab-tag reveal">Foundation</div>
+        <p class="r-eyebrow reveal">01 — Statistical Methodology</p>
+        <h2 class="r-title reveal d1">Building methods<br>from the <em>ground up</em>.</h2>
         <div class="r-divider reveal d2"></div>
-        <p class="r-body reveal d2">{{ site.data.research[0].desc1 }}</p>
-        <p class="r-body reveal d2">{{ site.data.research[0].desc2 }}</p>
+        <p class="r-body reveal d2">We develop novel statistical methods for complex, real-world data. Generalized fiducial inference offers a new framework for uncertainty quantification. Dynamic network clustering captures how connections evolve over time — in social, biological, and brain networks.</p>
+        <p class="r-body reveal d2">Methods are not just tools. They are the structure that makes scientific inference possible.</p>
         <div class="r-tags reveal d3">
-          {% for tag in site.data.research[0].tags %}
-          <span class="r-tag">{{ tag }}</span>
-          {% endfor %}
+          <span class="r-tag">Fiducial Inference</span>
+          <span class="r-tag">Uncertainty Quantification</span>
+          <span class="r-tag">Dynamic Networks</span>
+          <span class="r-tag">Brain Connectivity</span>
+          <span class="r-tag">R / Python Packages</span>
         </div>
-        <div class="reveal d3" style="margin-top:2rem;">
-          <p style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.15em;color:var(--terra);text-transform:uppercase;margin-bottom:0.8rem;">Students will learn</p>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;">
-            {% for item in site.data.research[0].learn %}
-            <li style="font-size:0.82rem;color:var(--warm);display:flex;gap:0.6rem;align-items:flex-start;line-height:1.5;"><span style="color:var(--terra);flex-shrink:0;">→</span>{{ item }}</li>
-            {% endfor %}
+        <div class="r-learn reveal d3">
+          <p class="r-learn-title">Students will learn</p>
+          <ul>
+            <li>Statistical method development end-to-end</li>
+            <li>Network analysis &amp; graph theory</li>
+            <li>R/Python package development</li>
+            <li>Simulation study design</li>
           </ul>
         </div>
       </div>
-      <div class="viz-box reveal d2">
-        <canvas id="canvas-r1"></canvas>
-      </div>
+      <div class="viz-box reveal d2"><canvas id="canvas-r1"></canvas></div>
     </div>
   </div>
 </section>
 
-<!-- RESEARCH 2 -->
-<section id="research-methods" class="scene dark2" data-nav="dark">
+<!-- RESEARCH 2: FLOOR — Biomedical Imaging -->
+<section id="research-imaging" class="scene dark2" data-nav="dark">
   <canvas class="scene-bg" id="bg-r2"></canvas>
   <div class="scene-inner">
     <div class="research-grid reverse">
       <div>
-        <p class="r-eyebrow reveal">02 — Statistical Methodology</p>
-        <h2 class="r-title reveal d1">Building methods<br>from the <em>ground up</em>.</h2>
+        <div class="r-slab-tag reveal">Floor</div>
+        <p class="r-eyebrow reveal">02 — Biomedical Imaging &amp; Clinical AI</p>
+        <h2 class="r-title reveal d1">Medical imaging<br>meets <em>statistical rigor</em>.</h2>
         <div class="r-divider reveal d2"></div>
-        <p class="r-body reveal d2">{{ site.data.research[1].desc1 }}</p>
-        <p class="r-body reveal d2">{{ site.data.research[1].desc2 }}</p>
+        <p class="r-body reveal d2">We develop and evaluate statistical and AI-based methods for medical image analysis — spanning CT, MRI, fMRI, and DTI. From pulmonary CT modeling to neuroimaging pipelines, we ensure that clinical AI systems are validated with the rigor they deserve.</p>
+        <p class="r-body reveal d2">If the model says something, we ask: can we trust it?</p>
         <div class="r-tags reveal d3">
-          {% for tag in site.data.research[1].tags %}
-          <span class="r-tag">{{ tag }}</span>
-          {% endfor %}
+          <span class="r-tag">CT / MRI / fMRI / DTI</span>
+          <span class="r-tag">Neuroimaging</span>
+          <span class="r-tag">GLMM · GEE</span>
+          <span class="r-tag">DL Reproducibility</span>
+          <span class="r-tag">Survival Analysis</span>
         </div>
-        <div class="reveal d3" style="margin-top:2rem;">
-          <p style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.15em;color:var(--terra2);text-transform:uppercase;margin-bottom:0.8rem;">Students will learn</p>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;">
-            {% for item in site.data.research[1].learn %}
-            <li style="font-size:0.82rem;color:rgba(245,242,238,0.5);display:flex;gap:0.6rem;align-items:flex-start;line-height:1.5;"><span style="color:var(--terra2);flex-shrink:0;">→</span>{{ item }}</li>
-            {% endfor %}
+        <div class="r-learn reveal d3">
+          <p class="r-learn-title">Students will learn</p>
+          <ul>
+            <li>Medical image data preprocessing &amp; analysis</li>
+            <li>GLMM, GEE, Cox PH, competing risks</li>
+            <li>DL model evaluation &amp; reproducibility</li>
+            <li>Neuroimaging analysis pipelines</li>
           </ul>
         </div>
       </div>
-      <div class="viz-box reveal d1">
-        <canvas id="canvas-r2"></canvas>
-      </div>
+      <div class="viz-box reveal d1"><canvas id="canvas-r2"></canvas></div>
     </div>
   </div>
 </section>
 
-<!-- RESEARCH 3 -->
+<!-- RESEARCH 3: FRAMEWORK — Population Health -->
 <section id="research-epi" class="scene light" data-nav="light">
   <canvas class="scene-bg" id="bg-r3"></canvas>
   <div class="scene-inner">
     <div class="research-grid">
       <div>
+        <div class="r-slab-tag reveal">Framework</div>
         <p class="r-eyebrow reveal">03 — Population Health &amp; Epidemiology</p>
         <h2 class="r-title reveal d1">Data that connects<br><em>diet to disease</em>.</h2>
         <div class="r-divider reveal d2"></div>
-        <p class="r-body reveal d2">{{ site.data.research[2].desc1 }}</p>
-        <p class="r-body reveal d2">{{ site.data.research[2].desc2 }}</p>
+        <p class="r-body reveal d2">Using large-scale population surveys including KNHANES, we investigate how dietary patterns — including Korean traditional foods — relate to chronic disease outcomes. Complex survey design requires careful statistical handling, and we specialize in getting it right.</p>
+        <p class="r-body reveal d2">From nutritional epidemiology to chronic disease risk, we connect individual-level data to population-level inference.</p>
         <div class="r-tags reveal d3">
-          {% for tag in site.data.research[2].tags %}
-          <span class="r-tag">{{ tag }}</span>
-          {% endfor %}
+          <span class="r-tag">KNHANES</span>
+          <span class="r-tag">Complex Survey Design</span>
+          <span class="r-tag">Nutritional Epidemiology</span>
+          <span class="r-tag">K-Food</span>
+          <span class="r-tag">GLM · Logistic</span>
         </div>
-        <div class="reveal d3" style="margin-top:2rem;">
-          <p style="font-family:var(--mono);font-size:0.62rem;letter-spacing:0.15em;color:var(--terra);text-transform:uppercase;margin-bottom:0.8rem;">Students will learn</p>
-          <ul style="list-style:none;display:flex;flex-direction:column;gap:0.4rem;">
-            {% for item in site.data.research[2].learn %}
-            <li style="font-size:0.82rem;color:var(--warm);display:flex;gap:0.6rem;align-items:flex-start;line-height:1.5;"><span style="color:var(--terra);flex-shrink:0;">→</span>{{ item }}</li>
-            {% endfor %}
+        <div class="r-learn reveal d3">
+          <p class="r-learn-title">Students will learn</p>
+          <ul>
+            <li>Complex survey data analysis</li>
+            <li>Large-scale public data (KNHANES, 건보)</li>
+            <li>Epidemiological study design</li>
+            <li>Logistic / Poisson regression, GLM</li>
           </ul>
         </div>
       </div>
-      <div class="viz-box reveal d2">
-        <canvas id="canvas-r3"></canvas>
-      </div>
+      <div class="viz-box reveal d2"><canvas id="canvas-r3"></canvas></div>
     </div>
   </div>
 </section>
@@ -363,15 +372,14 @@ layout: default
   <canvas class="scene-bg" id="bg-join"></canvas>
   <div class="scene-inner">
     <div class="join-inner">
-      <p class="section-label reveal">Join Us</p>
-      <h2 class="reveal d1" style="font-family:var(--serif);font-size:clamp(2.5rem,5vw,4.5rem);font-weight:700;font-style:italic;line-height:1.1;margin-bottom:2rem;">같이 연구할<br>분을 찾습니다.</h2>
-      <p class="join-body reveal d2">통계 방법론과 그 응용에 관심 있는 학생과 연구자를 환영합니다. 관심 있으시면 편하게 연락주세요.</p>
+      <h2 class="join-title reveal">Join Us</h2>
+      <p class="join-body reveal d1">We welcome students and researchers with curiosity about statistical methodology and its applications. If any of our research areas interest you, feel free to reach out.</p>
       <div class="join-positions reveal d2">
-        <div class="join-pos"><div class="join-pos-dot"></div><div><div class="join-pos-name">석·박사 과정</div><div class="join-pos-desc">통계학, 수학, 또는 생의학 연구에 관심 있는 분. R 또는 Python 경험 우대.</div></div></div>
-        <div class="join-pos"><div class="join-pos-dot"></div><div><div class="join-pos-name">학부 연구생</div><div class="join-pos-desc">응용통계 및 데이터과학 연구 경험을 쌓고 싶은 전북대학교 학부생.</div></div></div>
-        <div class="join-pos"><div class="join-pos-dot"></div><div><div class="join-pos-name">공동 연구</div><div class="join-pos-desc">데이터와 통계적 질문을 가진 임상 연구자, 역학자, 또는 연구자.</div></div></div>
+        <div class="join-pos"><div class="join-pos-dot"></div><div><div class="join-pos-name">MS / PhD Students</div><div class="join-pos-desc">Strong interest in statistics or biomedical research. R or Python experience is a plus.</div></div></div>
+        <div class="join-pos"><div class="join-pos-dot"></div><div><div class="join-pos-name">Undergraduate Research Assistants</div><div class="join-pos-desc">JBNU undergraduates looking to gain hands-on research experience.</div></div></div>
+        <div class="join-pos"><div class="join-pos-dot"></div><div><div class="join-pos-name">Collaborators</div><div class="join-pos-desc">Clinicians, epidemiologists, or researchers with data and statistical questions.</div></div></div>
       </div>
-      <a href="mailto:{{ site.data.pi.email }}" class="join-cta reveal d3">연락하기 →</a>
+      <a href="mailto:{{ site.data.pi.email }}" class="join-cta reveal d3">Get in touch →</a>
     </div>
   </div>
 </section>
@@ -402,7 +410,7 @@ layout: default
 <footer>
   <div class="footer-logo">S-LAB</div>
   <div class="footer-right">
-    Statistics &amp; Learning for Applied Biomedicine<br>
+    Statistical Learning Across Biomedicine<br>
     전북대학교 통계학과 · Department of Statistics, Jeonbuk National University<br>
     Jeonju, Jeollabuk-do, South Korea
   </div>
@@ -411,7 +419,6 @@ layout: default
 <script>
 const nav = document.getElementById("nav");
 const sceneEls = document.querySelectorAll(".scene[data-nav]");
-
 function updateNav() {
   nav.classList.toggle("scrolled", scrollY > 60);
   let theme = "light";
@@ -422,105 +429,7 @@ function updateNav() {
 }
 window.addEventListener("scroll", updateNav, { passive: true });
 updateNav();
-
 document.querySelectorAll(".reveal").forEach(el => {
   new IntersectionObserver(([e]) => { if (e.isIntersecting) el.classList.add("visible"); }, { threshold: 0.1 }).observe(el);
 });
-
-document.querySelectorAll(".people-tab").forEach(tab => {
-  tab.addEventListener("click", () => {
-    document.querySelectorAll(".people-tab").forEach(t => t.classList.remove("active"));
-    document.querySelectorAll(".people-panel").forEach(p => p.classList.remove("active"));
-    tab.classList.add("active");
-    document.getElementById("panel-" + tab.dataset.tab).classList.add("active");
-  });
-});
-document.querySelectorAll(".pub-tab").forEach(tab => {
-  tab.addEventListener("click", () => {
-    document.querySelectorAll(".pub-tab").forEach(t => t.classList.remove("active"));
-    document.querySelectorAll(".pub-panel").forEach(p => p.classList.remove("active"));
-    tab.classList.add("active");
-    document.getElementById("panel-" + tab.dataset.tab).classList.add("active");
-  });
-});
-
-function dpr(canvas) {
-  const d = window.devicePixelRatio || 1;
-  canvas.width = canvas.offsetWidth * d;
-  canvas.height = canvas.offsetHeight * d;
-  const ctx = canvas.getContext("2d");
-  ctx.scale(d, d);
-  return { ctx, W: canvas.offsetWidth, H: canvas.offsetHeight };
-}
-
-function drawLightBg(id) {
-  const c = document.getElementById(id); if (!c) return;
-  const {ctx,W,H} = dpr(c); ctx.clearRect(0,0,W,H);
-  for(let x=0;x<W;x+=64){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.strokeStyle="rgba(156,136,116,0.06)";ctx.lineWidth=0.4;ctx.stroke();}
-  for(let y=0;y<H;y+=64){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.strokeStyle="rgba(156,136,116,0.06)";ctx.lineWidth=0.4;ctx.stroke();}
-  [0.25,0.5,0.75].forEach(p=>{ctx.beginPath();ctx.moveTo(0,H*p);ctx.lineTo(W,H*p);ctx.strokeStyle="rgba(196,96,58,0.06)";ctx.lineWidth=1;ctx.stroke();});
-}
-
-function drawDarkBg(id,alpha=0.07) {
-  const c = document.getElementById(id); if (!c) return;
-  const {ctx,W,H} = dpr(c); ctx.clearRect(0,0,W,H);
-  [0.2,0.35,0.5,0.65,0.8].forEach((p,i)=>{ctx.beginPath();ctx.moveTo(0,H*p);ctx.lineTo(W,H*p);ctx.strokeStyle=`rgba(224,122,82,${alpha*(i%2===0?1:0.5)})`;ctx.lineWidth=i%2===0?1:0.5;ctx.stroke();});
-  for(let x=0;x<W;x+=80){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.strokeStyle=`rgba(245,242,238,${alpha*0.4})`;ctx.lineWidth=0.4;ctx.stroke();}
-}
-
-function drawTerraBg(id) {
-  const c = document.getElementById(id); if (!c) return;
-  const {ctx,W,H} = dpr(c); ctx.clearRect(0,0,W,H);
-  [0.15,0.3,0.5,0.7,0.85].forEach((p,i)=>{ctx.beginPath();ctx.moveTo(0,H*p);ctx.lineTo(W,H*p);ctx.strokeStyle=`rgba(245,242,238,${i%2===0?0.1:0.05})`;ctx.lineWidth=i%2===0?1:0.5;ctx.stroke();});
-  for(let x=0;x<W;x+=80){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.strokeStyle="rgba(245,242,238,0.04)";ctx.lineWidth=0.4;ctx.stroke();}
-}
-
-function drawR1() {
-  const c = document.getElementById("canvas-r1"); if(!c) return;
-  const {ctx,W,H} = dpr(c); ctx.clearRect(0,0,W,H);
-  for(let i=0;i<8;i++){ctx.beginPath();ctx.moveTo(0,H*i/8);ctx.lineTo(W,H*i/8);ctx.strokeStyle="rgba(156,136,116,0.07)";ctx.lineWidth=0.5;ctx.stroke();}
-  const cx=W*0.5,cy=H*0.44,rx=W*0.32,ry=H*0.35;
-  ctx.beginPath();ctx.ellipse(cx,cy,rx,ry,0,0,Math.PI*2);ctx.strokeStyle="rgba(196,96,58,0.3)";ctx.lineWidth=1.5;ctx.stroke();ctx.fillStyle="rgba(196,96,58,0.03)";ctx.fill();
-  ctx.beginPath();ctx.ellipse(cx,cy,rx*0.6,ry*0.55,0,0,Math.PI*2);ctx.strokeStyle="rgba(196,96,58,0.12)";ctx.lineWidth=0.8;ctx.stroke();
-  const colors=["rgba(196,96,58,0.5)","rgba(224,122,82,0.4)","rgba(156,136,116,0.35)","rgba(196,96,58,0.3)"];
-  for(let i=0;i<32;i++){const angle=(i/32)*Math.PI*2;const r1=rx*0.12,r2=rx*(0.5+Math.random()*0.4);const sx=cx+Math.cos(angle)*r1,sy=cy+Math.sin(angle)*r1;const ex=cx+Math.cos(angle+(Math.random()-0.5)*0.5)*r2;const ey=cy+Math.sin(angle+(Math.random()-0.5)*0.5)*r2*(ry/rx);const cpx=cx+Math.cos(angle+0.3)*r2*0.5,cpy=cy+Math.sin(angle+0.3)*r2*0.4;ctx.beginPath();ctx.moveTo(sx,sy);ctx.quadraticCurveTo(cpx,cpy,ex,ey);ctx.strokeStyle=colors[i%colors.length];ctx.lineWidth=0.7+Math.random()*0.6;ctx.stroke();}
-  const sy2=H*0.84,sh=H*0.12;ctx.fillStyle="rgba(245,242,238,0.5)";ctx.fillRect(W*0.05,sy2,W*0.9,sh);ctx.strokeStyle="rgba(196,96,58,0.15)";ctx.lineWidth=0.5;ctx.strokeRect(W*0.05,sy2,W*0.9,sh);
-  const ox=W*0.08,oy2=sy2+sh-4,cw=W*0.84,ch=sh-8;const steps=[1,0.92,0.83,0.76,0.68,0.60,0.54,0.49,0.45,0.42];ctx.beginPath();steps.forEach((s,i)=>{const x=ox+(i/(steps.length-1))*cw,y=oy2-s*ch;if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);if(i<steps.length-1)ctx.lineTo(ox+((i+1)/(steps.length-1))*cw,y);});ctx.strokeStyle="rgba(196,96,58,0.7)";ctx.lineWidth=1.2;ctx.stroke();
-  ctx.font="9px DM Mono,monospace";ctx.fillStyle="rgba(156,136,116,0.6)";ctx.fillText("Survival Model",W*0.08+4,sy2+12);
-}
-
-function drawR2() {
-  const c = document.getElementById("canvas-r2"); if(!c) return;
-  const {ctx,W,H} = dpr(c); ctx.clearRect(0,0,W,H);
-  const nodes=[{x:0.5,y:0.48,r:9,main:true},{x:0.25,y:0.25,r:5},{x:0.75,y:0.25,r:6},{x:0.2,y:0.6,r:4},{x:0.8,y:0.6,r:5},{x:0.5,y:0.15,r:4},{x:0.35,y:0.78,r:5},{x:0.65,y:0.78,r:4},{x:0.1,y:0.4,r:3},{x:0.9,y:0.4,r:3},{x:0.5,y:0.88,r:4},{x:0.15,y:0.72,r:3},{x:0.85,y:0.72,r:3}];
-  const edges=[[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7],[1,2],[1,3],[1,8],[2,4],[2,9],[3,6],[4,7],[5,1],[5,2],[6,11],[7,12],[6,10],[7,10]];
-  const grd=ctx.createRadialGradient(W*0.5,H*0.48,0,W*0.5,H*0.48,W*0.28);grd.addColorStop(0,"rgba(224,122,82,0.15)");grd.addColorStop(1,"rgba(224,122,82,0)");ctx.beginPath();ctx.arc(W*0.5,H*0.48,W*0.28,0,Math.PI*2);ctx.fillStyle=grd;ctx.fill();
-  edges.forEach(([a,b])=>{ctx.beginPath();ctx.moveTo(W*nodes[a].x,H*nodes[a].y);ctx.lineTo(W*nodes[b].x,H*nodes[b].y);ctx.strokeStyle="rgba(224,122,82,0.2)";ctx.lineWidth=0.8;ctx.stroke();});
-  edges.filter(e=>e[0]===0).forEach(([,b])=>{ctx.beginPath();ctx.moveTo(W*0.5,H*0.48);ctx.lineTo(W*nodes[b].x,H*nodes[b].y);ctx.strokeStyle="rgba(224,122,82,0.08)";ctx.lineWidth=6;ctx.stroke();});
-  nodes.forEach(n=>{ctx.beginPath();ctx.arc(W*n.x,H*n.y,n.r,0,Math.PI*2);ctx.fillStyle=n.main?"rgba(224,122,82,0.9)":"rgba(224,122,82,0.45)";ctx.fill();if(n.main){ctx.beginPath();ctx.arc(W*n.x,H*n.y,n.r+5,0,Math.PI*2);ctx.strokeStyle="rgba(224,122,82,0.25)";ctx.lineWidth=1.5;ctx.stroke();ctx.beginPath();ctx.arc(W*n.x,H*n.y,n.r+12,0,Math.PI*2);ctx.strokeStyle="rgba(224,122,82,0.1)";ctx.lineWidth=1;ctx.stroke();}});
-  const oy=H*0.93,cw2=W*0.86,ox2=W*0.07;ctx.beginPath();for(let i=0;i<=100;i++){const xn=i/100,x=ox2+xn*cw2,upper=oy-(Math.exp(-3*Math.pow(xn-0.5,2))*H*0.07);i===0?ctx.moveTo(x,upper):ctx.lineTo(x,upper);}for(let i=100;i>=0;i--){const xn=i/100,x=ox2+xn*cw2,lower=oy-(Math.exp(-3*Math.pow(xn-0.5,2))*H*0.025);ctx.lineTo(x,lower);}ctx.fillStyle="rgba(224,122,82,0.1)";ctx.fill();ctx.beginPath();for(let i=0;i<=100;i++){const xn=i/100,x=ox2+xn*cw2,y=oy-(Math.exp(-3*Math.pow(xn-0.5,2))*H*0.048);i===0?ctx.moveTo(x,y):ctx.lineTo(x,y);}ctx.strokeStyle="rgba(224,122,82,0.65)";ctx.lineWidth=1.5;ctx.stroke();
-}
-
-function drawR3() {
-  const c = document.getElementById("canvas-r3"); if(!c) return;
-  const {ctx,W,H} = dpr(c); ctx.clearRect(0,0,W,H);
-  const ox=W*0.1,oy=H*0.88,cw=W*0.82,ch=H*0.74;
-  for(let i=1;i<=4;i++){ctx.beginPath();ctx.moveTo(ox,oy-(i/4)*ch);ctx.lineTo(ox+cw,oy-(i/4)*ch);ctx.strokeStyle="rgba(156,136,116,0.1)";ctx.lineWidth=0.5;ctx.stroke();ctx.beginPath();ctx.moveTo(ox+(i/4)*cw,oy);ctx.lineTo(ox+(i/4)*cw,oy-ch);ctx.strokeStyle="rgba(156,136,116,0.1)";ctx.lineWidth=0.5;ctx.stroke();}
-  ctx.beginPath();ctx.moveTo(ox,oy-ch);ctx.lineTo(ox,oy);ctx.lineTo(ox+cw,oy);ctx.strokeStyle="rgba(156,136,116,0.25)";ctx.lineWidth=0.8;ctx.stroke();
-  ctx.beginPath();ctx.moveTo(ox,oy-0.18*ch);ctx.lineTo(ox+cw,oy-0.78*ch);ctx.lineTo(ox+cw,oy-0.68*ch);ctx.lineTo(ox,oy-0.08*ch);ctx.fillStyle="rgba(196,96,58,0.07)";ctx.fill();
-  ctx.beginPath();ctx.moveTo(ox,oy-0.13*ch);ctx.lineTo(ox+cw,oy-0.73*ch);ctx.strokeStyle="rgba(196,96,58,0.65)";ctx.lineWidth=1.8;ctx.stroke();
-  [{color:"rgba(196,96,58,0.6)",n:25,mx:0.25,my:0.28},{color:"rgba(156,136,116,0.5)",n:25,mx:0.5,my:0.48},{color:"rgba(196,96,58,0.35)",n:20,mx:0.75,my:0.68}].forEach(g=>{for(let i=0;i<g.n;i++){const xn=g.mx+(Math.random()-0.5)*0.28,yn=g.my+(Math.random()-0.5)*0.22;ctx.beginPath();ctx.arc(ox+xn*cw,oy-yn*ch,2+Math.random()*1.5,0,Math.PI*2);ctx.fillStyle=g.color;ctx.fill();}});
-  ctx.font="9px DM Mono,monospace";ctx.fillStyle="rgba(156,136,116,0.5)";ctx.fillText("Complex Survey Design (KNHANES)",ox+4,oy-ch+14);
-}
-
-function drawAll() {
-  drawLightBg("bg-hero"); drawDarkBg("bg-intro");
-  drawLightBg("bg-r1"); drawDarkBg("bg-r2"); drawLightBg("bg-r3");
-  drawDarkBg("bg-people"); drawLightBg("bg-pub");
-  drawDarkBg("bg-news"); drawLightBg("bg-teaching");
-  drawTerraBg("bg-join"); drawDarkBg("bg-resources");
-  drawR1(); drawR2(); drawR3();
-}
-window.addEventListener("load", drawAll);
-window.addEventListener("resize", drawAll);
 </script>

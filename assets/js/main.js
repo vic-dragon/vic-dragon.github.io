@@ -710,7 +710,6 @@ document.querySelectorAll('.people-tab').forEach(tab => {
     document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
   });
 });
-
 // ── PUB TABS ──
 document.querySelectorAll('.pub-tab').forEach(tab => {
   tab.addEventListener('click', () => {
