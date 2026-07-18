@@ -58,11 +58,11 @@ published:
 under_review:
   - title: "Estimating Spatially-Smoothed Fiber Orientation Distribution from Diffusion-MRI Experiments"
     authors: "Hwang S et al."
-    role: "first"
+    role: "corresponding"
 
   - title: "Hierarchical Clustering in time-evolving dynamic networks"
     authors: "Hwang S et al."
-    role: "first"
+    role: "first", "corresponding"
 
   - title: "A Weighted Approach for Single Cutoff Selection in Survival Analysis"
     authors: "Hwang S et al."
@@ -73,6 +73,3 @@ under_review:
     role: "first"
 
 in_preparation:
-  - title: "Nonparametric Adaptive Regression on Manifolds (NARM)"
-    authors: "Hwang S, Lee TCM, Peng J"
-    role: "first"
