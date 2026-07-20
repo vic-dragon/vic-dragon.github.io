@@ -366,6 +366,9 @@ layout: default
         <div>
           <div class="news-title">{{ item.title }}</div>
           <div class="news-body">{{ item.body }}</div>
+          {% if item.link %}
+          <a href="{{ item.link }}" style="display:inline-block;margin-top:0.8rem;font-size:0.68rem;font-weight:600;letter-spacing:0.12em;color:var(--terra2);text-decoration:none;text-transform:uppercase;border-bottom:1px solid rgba(224,122,82,0.4);padding-bottom:2px;">{{ item.link_text }} →</a>
+          {% endif %}
         </div>
       </div>
       {% endfor %}
