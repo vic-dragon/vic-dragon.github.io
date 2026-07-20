@@ -1,5 +1,5 @@
-title: SLAB
-description: Statistics & Learning for Applied Biomedicine
+title: S-LAB
+description: Statistical Learning Across Biomedicine
 url: "https://vic-dragon.github.io"
 baseurl: ""
 theme: null
@@ -11,11 +11,9 @@ markdown: kramdown
 permalink: pretty
 
 collections:
-  people:
+  pages:
     output: true
-  publications:
-    output: false
-  news:
-    output: false
-  courses:
-    output: false
+    permalink: /:path/
+
+include:
+  - _pages
