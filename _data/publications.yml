@@ -1,11 +1,28 @@
 published:
+
+  - title: "Rethinking Statistics Education in the Age of Generative AI: The DRIP Framework"
+    journal: "To be appeared"
+    authors: "Hwang S et al."
+    year: 2026
+    index: "scopus"
+    role: "first"
+    doi: "#"
+
+  - title: "Cross-cohort analysis of expression and splicing quantitative trait loci in TOPMed"
+    journal: "Science"
+    authors: "Peter Orchard, ..., Hwang S, ..., Stephen C. J. Parker"
+    year: 2026
+    index: "SCIE"
+    role: "co-author"
+    doi: "https://doi.org/10.1126/science.adx2989"
+
   - title: "Gochujang attenuates colorectal cancer by promoting colonic SCFA utilization and GPCR expression despite limited recovery of microbial diversity"
     authors: "Baek J, Kim J, Jeong D, Hwang S, Donohoe D, Han A"
     journal: "Journal of Functional Foods"
     year: 2026
     index: "SCIE"
     role: "co-author"
-    doi: "#"
+    doi: "https://doi.org/10.1016/j.jff.2026.107417"
 
   - title: "CNNeoPP: a large language model-enhanced deep learning pipeline for personalized neoantigen prediction and liquid biopsy applications"
     authors: "Cai Y, Chen R, Song M, Wang L, Huo Z, Yang D, Zhang S, Gao S, Hwang S, Bai L, Lv Y, Cui Y, Zhang X"
@@ -13,7 +30,7 @@ published:
     year: 2026
     index: "SCIE"
     role: "co-author"
-    doi: "#"
+    doi: "https://doi.org/10.3389/fimmu.2026.1722117"
 
   - title: "Contextualized biomedical language processing enhances ICU survival prediction"
     authors: "Chen R, Cai Y, Zhang S, Huo Z, Song M, Li W, Yang D, Hwang S, Bai L, Han F, Zhang X"
@@ -21,7 +38,7 @@ published:
     year: 2026
     index: "SCIE"
     role: "co-author"
-    doi: "#"
+    doi: "https://doi.org/10.1016/j.isci.2025.114442"
 
   - title: "Estimating fiber orientation distribution with application to study brain lateralization using HCP D-MRI data"
     authors: "Hwang S, Lee T, Paul D, Peng J"
@@ -29,7 +46,7 @@ published:
     year: 2024
     index: "SCIE"
     role: "first"
-    doi: "#"
+    doi: "https://doi.org/10.1214/23-AOAS1781"
 
   - title: "Diagnostic Accuracy of Magnetic Resonance Imaging Features and Tumor-to-Nipple Distance for Nipple-Areolar Complex Involvement: A Systematic Review and Meta-Analysis"
     authors: "Byon J, Hwang S, Choi E, Choi H"
@@ -37,7 +54,7 @@ published:
     year: 2023
     index: "SCIE"
     role: "co-first"
-    doi: "#"
+    doi: "https://doi.org/10.3348/kjr.2022.0846"
 
   - title: "Generalized Fiducial Inference for Threshold Estimation in Dose-Response and Regression Settings"
     authors: "Hwang S, Lai C, Lee T"
@@ -45,7 +62,7 @@ published:
     year: 2022
     index: "SCIE"
     role: "first"
-    doi: "#"
+    doi: "https://doi.org/10.1007/s13253-021-00472-0"
 
   - title: "Simultaneous detection of multiple change points and community structures in time series of networks"
     authors: "Cheung RCY, Aue A, Hwang S, Lee T"
@@ -53,7 +70,7 @@ published:
     year: 2020
     index: "SCIE"
     role: "co-author"
-    doi: "#"
+    doi: "https://doi.org/10.1109/TSIPN.2020.3012286"
 
 under_review:
   - title: "Estimating Spatially-Smoothed Fiber Orientation Distribution from Diffusion-MRI Experiments"
@@ -65,10 +82,6 @@ under_review:
     role: "first"
 
   - title: "A Weighted Approach for Single Cutoff Selection in Survival Analysis"
-    authors: "Hwang S et al."
-    role: "first"
-
-  - title: "Rethinking Statistics Education in the Age of Generative AI: The DRIP Framework"
     authors: "Hwang S et al."
     role: "first"
 
