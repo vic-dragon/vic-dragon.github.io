@@ -5,7 +5,7 @@ permalink: /recruit/ct-ai-2025/
 ---
 <div style="max-width:800px;margin:8rem auto;padding:0 2rem;font-family:'Pretendard',sans-serif;color:#2d2926;">
 
-<p style="font-size:0.72rem;font-weight:600;letter-spacing:0.2em;color:#c4603a;text-transform:uppercase;margin-bottom:1rem;">Recruitment · 2025</p>
+<p style="font-size:0.72rem;font-weight:600;letter-spacing:0.2em;color:#c4603a;text-transform:uppercase;margin-bottom:1rem;">Recruitment · 2026</p>
 
 <h1 style="font-size:2.2rem;font-weight:700;line-height:1.2;margin-bottom:0.5rem;">흉부 CT 기반 AI 폐기능 예측 연구<br>학부연구생 모집</h1>
 <p style="font-size:0.9rem;color:#9c8874;margin-bottom:3rem;">전북대학교 통계학과 황승용 교수 연구실 · SLAB</p>
