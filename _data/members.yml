@@ -1,21 +1,21 @@
 current:
   - name: "김남윤(Namyoon Kim)"
-    role: "Undergraduate student"
+    role: "Undergraduate"
     research: "Machine Learning for Healthcare"
     photo: "/assets/images/namyoon.jpeg"
 
   - name: "김한재(Hanjae Kim)"
-    role: "Undergraduate student"
+    role: "Undergraduate"
     research: "Explainable AI for Healthcare"
     photo: "/assets/images/hanjae.jpeg"
 
   - name: "이영현(Younghyeon Lee)"
-    role: "Undergraduate student"
+    role: "Undergraduate"
     research: "Explainable AI for Healthcare"
     photo: "/assets/images/younghyun.jpeg"
 
   - name: "홍성지(Seongji Hong)"
-    role: "Master student"
+    role: "Master (Part)"
     research: ""
     photo: "/assets/images/seongji.jpeg"
 
