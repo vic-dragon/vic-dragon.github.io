@@ -4,12 +4,12 @@ current:
     research: "Machine Learning for Healthcare"
     photo: "/assets/images/namyoon.jpeg"
 
- - name: "김한재(Hanjae Kim)"
+  - name: "김한재(Hanjae Kim)"
     role: "Undergraduate student"
     research: "Explainable AI for Healthcare"
     photo: "/assets/images/hanjae.jpeg"
 
- - name: "이영현(Younghyun Lee)"
+  - name: "이영현(Younghyun Lee)"
     role: "Undergraduate student"
     research: "Explainable AI for Healthcare"
     photo: "/assets/images/younghyun.jpeg"
